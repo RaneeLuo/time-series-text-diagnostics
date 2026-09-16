@@ -1,0 +1,73 @@
+{
+  "census": {
+    "truce|sf_all": {
+      "ok": 246
+    },
+    "truce|sf_half": {
+      "ok": 245,
+      "noop": 1
+    },
+    "truce|ex_half": {
+      "ok": 246
+    },
+    "truce|resample": {
+      "ok": 246
+    },
+    "truce|masking": {
+      "ok": 246
+    },
+    "truce|gaussian": {
+      "ok": 246
+    },
+    "truce|five_number": {
+      "ok": 246
+    },
+    "sushi|sf_all": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|sf_half": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|ex_half": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|resample": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|masking": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|gaussian": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|five_number": {
+      "ok": 140
+    },
+    "sushi|sf_within_patch": {
+      "ok": 139,
+      "noop": 1
+    },
+    "sushi|sf_across_patch": {
+      "ok": 139,
+      "noop": 1
+    }
+  },
+  "drift": {
+    "truce|offset_drift": 245,
+    "truce|scale_drift": 243,
+    "sushi|offset_drift": 139,
+    "sushi|scale_drift": 139
+  },
+  "digest": "f8acb17261f6c7a53ad769b7f446a69a4665efa40ede0bc82a6118103d1977e8",
+  "signals": {
+    "truce": 246,
+    "sushi": 140
+  },
+  "base_seed": 42
+}

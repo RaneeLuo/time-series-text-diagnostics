@@ -1,0 +1,114 @@
+{
+ "sushi|rung2_sf_all_minus_resample": {
+  "ci95": [
+   -0.0179,
+   0.0464
+  ],
+  "ci90": [
+   -0.0143,
+   0.0393
+  ],
+  "mean_diff": 0.0143,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 140,
+  "n_signals": 140
+ },
+ "sushi|resample_minus_gaussian": {
+  "ci95": [
+   -0.0287,
+   0.0464
+  ],
+  "ci90": [
+   -0.025,
+   0.0393
+  ],
+  "mean_diff": 0.0071,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 140,
+  "n_signals": 140
+ },
+ "sushi|rung2_sf_all_minus_gaussian": {
+  "ci95": [
+   -0.0214,
+   0.0643
+  ],
+  "ci90": [
+   -0.0143,
+   0.0571
+  ],
+  "mean_diff": 0.0214,
+  "tost_pm005": "FAIL(not flat)",
+  "n_units": 140,
+  "n_signals": 140
+ },
+ "sushi|five_number_minus_rung2_sf_all": {
+  "ci95": [
+   -0.0714,
+   0.0714
+  ],
+  "ci90": [
+   -0.0643,
+   0.0536
+  ],
+  "mean_diff": -0.0036,
+  "tost_pm005": "FAIL(not flat)",
+  "n_units": 140,
+  "n_signals": 140
+ },
+ "truce|rung2_sf_all_minus_resample": {
+  "ci95": [
+   -0.0237,
+   0.0339
+  ],
+  "ci90": [
+   -0.0176,
+   0.0291
+  ],
+  "mean_diff": 0.0047,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 738,
+  "n_signals": 246
+ },
+ "truce|resample_minus_gaussian": {
+  "ci95": [
+   -0.0237,
+   0.0434
+  ],
+  "ci90": [
+   -0.0169,
+   0.0393
+  ],
+  "mean_diff": 0.0108,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 738,
+  "n_signals": 246
+ },
+ "truce|rung2_sf_all_minus_gaussian": {
+  "ci95": [
+   -0.0129,
+   0.0467
+  ],
+  "ci90": [
+   -0.0088,
+   0.04
+  ],
+  "mean_diff": 0.0156,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 738,
+  "n_signals": 246
+ },
+ "truce|five_number_minus_rung2_sf_all": {
+  "ci95": [
+   -0.0291,
+   0.0346
+  ],
+  "ci90": [
+   -0.0237,
+   0.0298
+  ],
+  "mean_diff": 0.0027,
+  "tost_pm005": "PASS(flat)",
+  "n_units": 738,
+  "n_signals": 246
+ }
+}

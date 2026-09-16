@@ -1,0 +1,47 @@
+{
+  "blocks": {
+    "base": 1756,
+    "five_number": 1756,
+    "pj_control": 400
+  },
+  "planned_gpu_questions": 10936,
+  "new_conditions": [
+    "resample",
+    "gaussian",
+    "cond_A",
+    "cond_B",
+    "cond_C"
+  ],
+  "fn_template_sha": "4a4b3475f9e7",
+  "jitter_census": {
+    "truce|offset_in_std": {
+      "median": 0.10215917620919203,
+      "max": 0.30309756163343166,
+      "n": 200
+    },
+    "truce|scale_rel": {
+      "median": 0.044152923538230665,
+      "max": 0.7196911196911198,
+      "n": 200
+    },
+    "sushi|offset_in_std": {
+      "median": 0.009586378682113289,
+      "max": 0.026975690462695028,
+      "n": 200
+    },
+    "sushi|scale_rel": {
+      "median": 0.004481506572765124,
+      "max": 0.17959353732233369,
+      "n": 200
+    }
+  },
+  "donor_seed": "sha256(caption_id|p3donor|42)",
+  "pj_seed": "sha256(pj|substrate|42)",
+  "notes": {
+    "rungs_1_2": "read from Probe-2 ChatTS records (join gate)",
+    "cond_A": "gaussian tensor + ORIGINAL prefix (manual path)",
+    "cond_B": "original tensor + DONOR prefix (manual path)",
+    "cond_C": "gaussian tensor + gaussian prefix via manual path; must equal stock 'gaussian' (anchor)",
+    "A_vs_C": "pre-registered near-construction expectation: approximately equal (paper prefix = 2 numbers, matched by construction)"
+  }
+}

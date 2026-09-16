@@ -1,0 +1,604 @@
+{
+  "script": "diagnose_probe3_setup.py",
+  "design_frame": "renorm-always; joint-channel resample; per-channel matched gaussian; dead ptp==0 pass-through; redraw rule row-level joint, max 8",
+  "part_a": {
+    "distinct_v": [
+      102,
+      103,
+      104,
+      109,
+      112,
+      114,
+      115,
+      117,
+      118,
+      122,
+      127,
+      130,
+      131,
+      132,
+      134,
+      135,
+      137,
+      138,
+      139,
+      140,
+      142,
+      143,
+      144,
+      145,
+      146,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180
+    ],
+    "stratum_sizes_all_rows": {
+      "102": 1,
+      "103": 1,
+      "104": 1,
+      "109": 1,
+      "112": 1,
+      "114": 1,
+      "115": 1,
+      "117": 2,
+      "118": 1,
+      "122": 1,
+      "127": 3,
+      "130": 1,
+      "131": 1,
+      "132": 1,
+      "134": 1,
+      "135": 2,
+      "137": 2,
+      "138": 1,
+      "139": 1,
+      "140": 3,
+      "142": 2,
+      "143": 1,
+      "144": 3,
+      "145": 1,
+      "146": 5,
+      "148": 5,
+      "149": 3,
+      "150": 2,
+      "151": 2,
+      "152": 1,
+      "153": 3,
+      "154": 3,
+      "155": 5,
+      "156": 6,
+      "157": 5,
+      "158": 7,
+      "159": 7,
+      "160": 11,
+      "161": 6,
+      "162": 11,
+      "163": 9,
+      "164": 26,
+      "165": 19,
+      "166": 41,
+      "167": 85,
+      "168": 1051,
+      "169": 1,
+      "170": 2,
+      "172": 4,
+      "173": 13,
+      "174": 3,
+      "175": 14,
+      "176": 11,
+      "177": 7,
+      "178": 24,
+      "179": 36,
+      "180": 544
+    },
+    "dep_strata": {
+      "V168": 1050,
+      "V180": 544,
+      "other": 411
+    },
+    "ambiguous_row_valid_len": 168,
+    "chance_references": {
+      "pool_2006": 0.004078446094196307,
+      "within_V168_n1051": 0.007169542053025143,
+      "within_V180_n544": 0.01264169806583127
+    },
+    "sf_all_residual_by_stratum": {
+      "V=168": {
+        "13": {
+          "n": 1050,
+          "mrr_unpert": 0.5821157725929165,
+          "mrr_sf_all": 0.009411715204856756
+        },
+        "14": {
+          "n": 1050,
+          "mrr_unpert": 0.5790687880255297,
+          "mrr_sf_all": 0.01033549914139154
+        },
+        "15": {
+          "n": 1050,
+          "mrr_unpert": 0.5800292158492472,
+          "mrr_sf_all": 0.010289008739634571
+        }
+      },
+      "V=180": {
+        "13": {
+          "n": 544,
+          "mrr_unpert": 0.5720451980688789,
+          "mrr_sf_all": 0.016191005056998515
+        },
+        "14": {
+          "n": 544,
+          "mrr_unpert": 0.5537416480210681,
+          "mrr_sf_all": 0.016055187941111076
+        },
+        "15": {
+          "n": 544,
+          "mrr_unpert": 0.5506462773631796,
+          "mrr_sf_all": 0.013258328694895231
+        }
+      },
+      "other": {
+        "13": {
+          "n": 411,
+          "mrr_unpert": 0.5058061824058688,
+          "mrr_sf_all": 0.012215185220549714
+        },
+        "14": {
+          "n": 411,
+          "mrr_unpert": 0.4781997612771935,
+          "mrr_sf_all": 0.014283506174487707
+        },
+        "15": {
+          "n": 411,
+          "mrr_unpert": 0.49039477556220884,
+          "mrr_sf_all": 0.018696438560507178
+        }
+      }
+    }
+  },
+  "b5_source_scan": [
+    "src\\data\\dataloader.py:92:                 scale=args.scale,",
+    "src\\data\\dataloader.py:103:                 scale=args.scale,",
+    "src\\data\\dataloader.py:113:                 scale=args.scale,",
+    "src\\data\\dataloader.py:119:                 scale=args.scale,",
+    "src\\data\\dataloader.py:161:         scale=args.scale)",
+    "src\\data\\dataset.py:8: from sklearn.preprocessing import StandardScaler",
+    "src\\data\\dataset.py:27:         scale: bool = True,",
+    "src\\data\\dataset.py:45:         self.scale = scale",
+    "src\\data\\dataset.py:84:         self.scaler = StandardScaler()",
+    "src\\data\\dataset.py:101:         if self.scale:",
+    "src\\data\\dataset.py:104:                 ts_scaled = self.scaler.fit_transform(ts)",
+    "src\\data\\dataset.py:105:                 self.data[i] = ts_scaled.T",
+    "src\\data\\dataset.py:191:         scale: bool = True,",
+    "src\\data\\dataset.py:206:         self.scale = scale",
+    "src\\data\\dataset.py:231:         self.scaler = StandardScaler()",
+    "src\\data\\dataset.py:239:         if self.scale:",
+    "src\\data\\dataset.py:241:                 ts_scale = self.scaler.fit_transform(ts.T)",
+    "src\\data\\dataset.py:242:                 ts_scale = ts_scale.T  #[C, L]",
+    "src\\data\\dataset.py:243:                 data.append(ts_scale[:, :-self.forecast_len])",
+    "src\\data\\dataset.py:244:                 forecast_data.append(ts_scale[:, -self.forecast_len:])",
+    "src\\data\\dataset.py:292:         scale: bool = True,",
+    "src\\data\\dataset.py:300:         self.scale = scale",
+    "src\\data\\dataset.py:306:         self.scaler = StandardScaler()",
+    "src\\data\\dataset.py:310:         if self.scale:",
+    "src\\data\\dataset.py:313:                 ts_scaled = self.scaler.fit_transform(ts)",
+    "src\\data\\dataset.py:314:                 self.data[i] = ts_scaled.T",
+    "src\\data\\dataset.py:356:         scale: bool = True,",
+    "src\\data\\dataset.py:365:         self.scale = scale",
+    "src\\data\\dataset.py:373:         self.scaler = StandardScaler()",
+    "src\\data\\dataset.py:380:         if self.scale:",
+    "src\\data\\dataset.py:383:                 ts_scaled = self.scaler.fit_transform(ts)",
+    "src\\data\\dataset.py:384:                 self.data[i] = ts_scaled.T",
+    "src\\data\\dataset.py:447:         scale: bool = True,",
+    "src\\data\\dataset.py:461:         self.scale = scale",
+    "src\\data\\dataset.py:469:         self.scaler = StandardScaler()",
+    "src\\data\\dataset.py:493:         if self.scale:",
+    "src\\data\\dataset.py:495:             self.scaler.fit(train_data.values)",
+    "src\\data\\dataset.py:496:             data = self.scaler.transform(df_data.values)",
+    "src\\data\\dataset.py:497:             data_prior = self.scaler.transform(df_data_prior.values[:,-1].reshape(-1, 1))",
+    "src\\data\\dataset.py:576:         return self.scaler.inverse_transform(data)",
+    "src\\data\\load_data.py:6: from sklearn.preprocessing import StandardScaler"
+  ],
+  "b5_locus": "undetermined (no identifiable series column)",
+  "part_b": {
+    "geometry": {
+      "valid_points": 2393055,
+      "natural_zeros": 77278,
+      "dead_channels": 498,
+      "dead_split": {
+        "all_zero": 441,
+        "nonzero_constant": 57
+      }
+    },
+    "t7": {
+      "max_abs_mean": 4.306258190245856e-08,
+      "max_dev_sd_ddof0": 5.177298179059875e-08,
+      "max_dev_sd_ddof1": 0.004938308358469756,
+      "convention": "ddof=0"
+    },
+    "calibration": {
+      "rms_mean_drift_prerenorm": 0.07676793527823937,
+      "post_renorm_max_abs_mean": 4.638873395465669e-08,
+      "post_renorm_max_sd_dev": 5.365738786622387e-08,
+      "redraw_census": {
+        "13": 41,
+        "14": 25,
+        "15": 42
+      },
+      "collapse_rows": [
+        [
+          79,
+          15,
+          2
+        ],
+        [
+          100,
+          15,
+          1
+        ],
+        [
+          127,
+          14,
+          1
+        ],
+        [
+          173,
+          15,
+          1
+        ],
+        [
+          206,
+          13,
+          1
+        ],
+        [
+          206,
+          14,
+          1
+        ],
+        [
+          212,
+          14,
+          1
+        ],
+        [
+          222,
+          13,
+          3
+        ],
+        [
+          222,
+          15,
+          2
+        ],
+        [
+          299,
+          14,
+          1
+        ],
+        [
+          299,
+          15,
+          1
+        ],
+        [
+          369,
+          13,
+          2
+        ],
+        [
+          369,
+          15,
+          3
+        ],
+        [
+          507,
+          15,
+          1
+        ],
+        [
+          512,
+          15,
+          1
+        ],
+        [
+          533,
+          15,
+          2
+        ],
+        [
+          545,
+          13,
+          1
+        ],
+        [
+          593,
+          15,
+          2
+        ],
+        [
+          634,
+          14,
+          1
+        ],
+        [
+          678,
+          13,
+          1
+        ],
+        [
+          748,
+          14,
+          1
+        ],
+        [
+          757,
+          13,
+          2
+        ],
+        [
+          757,
+          15,
+          1
+        ],
+        [
+          785,
+          14,
+          1
+        ],
+        [
+          793,
+          15,
+          1
+        ],
+        [
+          806,
+          13,
+          2
+        ],
+        [
+          806,
+          15,
+          1
+        ],
+        [
+          862,
+          15,
+          1
+        ],
+        [
+          877,
+          13,
+          1
+        ],
+        [
+          925,
+          13,
+          3
+        ],
+        [
+          973,
+          13,
+          2
+        ],
+        [
+          973,
+          15,
+          1
+        ],
+        [
+          1033,
+          13,
+          2
+        ],
+        [
+          1033,
+          14,
+          1
+        ],
+        [
+          1061,
+          14,
+          2
+        ],
+        [
+          1103,
+          14,
+          2
+        ],
+        [
+          1193,
+          15,
+          1
+        ],
+        [
+          1233,
+          13,
+          1
+        ],
+        [
+          1236,
+          13,
+          2
+        ],
+        [
+          1276,
+          14,
+          1
+        ],
+        [
+          1292,
+          15,
+          1
+        ],
+        [
+          1368,
+          15,
+          1
+        ],
+        [
+          1404,
+          13,
+          1
+        ],
+        [
+          1439,
+          15,
+          2
+        ],
+        [
+          1484,
+          14,
+          5
+        ],
+        [
+          1512,
+          15,
+          1
+        ],
+        [
+          1513,
+          14,
+          2
+        ],
+        [
+          1513,
+          15,
+          3
+        ],
+        [
+          1561,
+          15,
+          1
+        ],
+        [
+          1597,
+          13,
+          1
+        ],
+        [
+          1597,
+          15,
+          4
+        ],
+        [
+          1603,
+          13,
+          3
+        ],
+        [
+          1603,
+          14,
+          1
+        ],
+        [
+          1628,
+          14,
+          1
+        ],
+        [
+          1649,
+          13,
+          1
+        ],
+        [
+          1667,
+          13,
+          2
+        ],
+        [
+          1702,
+          13,
+          3
+        ],
+        [
+          1708,
+          13,
+          3
+        ],
+        [
+          1708,
+          14,
+          1
+        ],
+        [
+          1720,
+          14,
+          1
+        ],
+        [
+          1774,
+          14,
+          1
+        ],
+        [
+          1774,
+          15,
+          1
+        ],
+        [
+          1849,
+          13,
+          1
+        ],
+        [
+          1849,
+          15,
+          3
+        ],
+        [
+          1857,
+          15,
+          1
+        ],
+        [
+          1880,
+          13,
+          1
+        ],
+        [
+          1973,
+          13,
+          2
+        ],
+        [
+          1973,
+          15,
+          2
+        ]
+      ],
+      "commutation_max_diff": 9.5367431640625e-07,
+      "b11_max_diff": 2.384185791015625e-07
+    }
+  },
+  "runtime_seconds": 114.1
+}

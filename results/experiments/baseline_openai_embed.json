@@ -1,0 +1,46 @@
+{
+  "model": "text-embedding-3-large",
+  "split": "test",
+  "protocol": "strict pair-level retrieval, identical to models/clasp/evaluate.py harness B",
+  "soft_mAP_skipped": "paper-protocol harness is a CLaSP-paper reproduction tool; no reference value here",
+  "serialisation": {
+    "z_normalised": true,
+    "scale": 10,
+    "clip": 99,
+    "points_retained": "all"
+  },
+  "chance_reference_pool386": {
+    "recall@1": 0.0025906735751295338,
+    "recall@10": 0.025906735751295335,
+    "mrr": 0.016928362206878687
+  },
+  "strict": {
+    "all": {
+      "recall@1": 0.004555808656036446,
+      "recall@5": 0.02164009111617312,
+      "recall@10": 0.05239179954441914,
+      "mrr": 0.027112879685524893,
+      "median_rank": 133.0,
+      "n_queries": 878,
+      "pool_size": 386
+    },
+    "truce": {
+      "recall@1": 0.005420054200542005,
+      "recall@5": 0.025745257452574527,
+      "recall@10": 0.06233062330623306,
+      "mrr": 0.03155827929909404,
+      "median_rank": 109.5,
+      "n_queries": 738,
+      "pool_size": 386
+    },
+    "sushi": {
+      "recall@1": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "mrr": 0.003679273151138994,
+      "median_rank": 307.0,
+      "n_queries": 140,
+      "pool_size": 386
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "checkpoint": "results/checkpoints/best_baseline_seed42.pt",
+  "ours": {
+    "sbert_ts0.5": {
+      "truce": 0.43966308675432425,
+      "all": 0.5056753363625042,
+      "sushi": 0.8536541950113379
+    },
+    "sbert_ts0.8": {
+      "truce": 0.10451367551436914,
+      "all": 0.13656493935632127,
+      "sushi": 0.3055208873231832
+    },
+    "distilbert_ts0.5": {
+      "truce": 0.9968265260033552,
+      "all": 0.9973325469139819,
+      "sushi": 1.0
+    },
+    "distilbert_ts0.8": {
+      "truce": 0.5498088104558293,
+      "all": 0.6106841999011702,
+      "sushi": 0.9315844671201814
+    }
+  },
+  "paper_table3": {
+    "sbert_ts0.5": {
+      "truce": 0.458,
+      "sushi": 0.982,
+      "all": 0.954
+    },
+    "sbert_ts0.8": {
+      "truce": 0.136,
+      "sushi": 0.571,
+      "all": 0.556
+    },
+    "distilbert_ts0.5": {
+      "truce": 1.0,
+      "sushi": 1.0,
+      "all": 0.959
+    },
+    "distilbert_ts0.8": {
+      "truce": 0.491,
+      "sushi": 0.992,
+      "all": 0.96
+    }
+  }
+}

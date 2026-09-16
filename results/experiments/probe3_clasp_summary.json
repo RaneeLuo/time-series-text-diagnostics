@@ -1,0 +1,727 @@
+{
+  "conditions": [
+    "resample",
+    "gaussian"
+  ],
+  "g4_buffer": 0.02,
+  "seed_scheme": "int(sha256('{sample_id}|{cond}|{ckpt_seed}')[:12hex],16)",
+  "registered_degenerates": [
+    "sushi:clean\\00\\0000009"
+  ],
+  "seeds": {
+    "42": {
+      "g6a_dev": 0.0,
+      "g6b_dev": 0.004065040650406502,
+      "tied_queries_unperturbed": {
+        "truce": 18,
+        "sushi": 0
+      },
+      "overall_mrr": {
+        "unperturbed": 0.1316916557613329,
+        "resample": 0.03676248061544182,
+        "gaussian": 0.022623421190650573
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.1111111111111111,
+            "recall@10": 1.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.05,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 0.14285714285714285,
+            "recall@10": 1.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.30355548995470233,
+            "recall@10": 0.7777777777777778
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.06917577240354057,
+            "recall@10": 0.14814814814814814
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.01512148868068876,
+            "recall@10": 0.044444444444444446
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.375,
+            "recall@10": 1.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.38611111111111107,
+            "recall@10": 1.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.013647540983606557,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.013746922142775692,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.0065254169801520654,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.005636098660291129,
+            "recall@10": 0.0
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.10011265900312707,
+            "recall@10": 0.23496503496503496
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.02821396422230427,
+            "recall@10": 0.05174825174825175
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.024040868000018156,
+            "recall@10": 0.03636363636363636
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.07693809475025747,
+            "recall@10": 0.05555555555555555
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.06325959764373269,
+            "recall@10": 0.1111111111111111
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.02261746741067845,
+            "recall@10": 0.05555555555555555
+          }
+        }
+      },
+      "sushi_fluct_tables": {
+        "clean": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3432026065721717,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.15541120208842682,
+            "recall@10": 0.2
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.016899798554985825,
+            "recall@10": 0.1
+          }
+        },
+        "negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3077131489200454,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.06461157610202643,
+            "recall@10": 0.2
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.00956226032607074,
+            "recall@10": 0.0
+          }
+        },
+        "noisy": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.2838676948051948,
+            "recall@10": 0.65
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.03337495989980331,
+            "recall@10": 0.1
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.017925921642364943,
+            "recall@10": 0.05
+          }
+        },
+        "positive spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3066883116883117,
+            "recall@10": 0.9
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.08747185869328858,
+            "recall@10": 0.25
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.014620976839263472,
+            "recall@10": 0.1
+          }
+        },
+        "positive-and-negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.31265010351966877,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.09992913225103289,
+            "recall@10": 0.25
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.005954889516457207,
+            "recall@10": 0.0
+          }
+        },
+        "smooth": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3711134453781512,
+            "recall@10": 0.9
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.07815101709687372,
+            "recall@10": 0.1
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.023166911938686505,
+            "recall@10": 0.05
+          }
+        },
+        "step": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.20431980186625226,
+            "recall@10": 0.55
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.027708939814669285,
+            "recall@10": 0.1
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.02381165511639889,
+            "recall@10": 0.05
+          }
+        }
+      }
+    },
+    "43": {
+      "g6a_dev": 0.0,
+      "g6b_dev": 0.0013550135501355087,
+      "tied_queries_unperturbed": {
+        "truce": 18,
+        "sushi": 0
+      },
+      "overall_mrr": {
+        "unperturbed": 0.1379269842059392,
+        "resample": 0.03697256821450245,
+        "gaussian": 0.022231492482768362
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.08333333333333333,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.034482758620689655,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 0.008064516129032258,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.30924689159184604,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.061470474199756826,
+            "recall@10": 0.13333333333333333
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.01715395289789041,
+            "recall@10": 0.022222222222222223
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.43125,
+            "recall@10": 1.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.325,
+            "recall@10": 1.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.023669617419617418,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.03625528738393992,
+            "recall@10": 0.2
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.04653810658253386,
+            "recall@10": 0.2
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.01024127404465041,
+            "recall@10": 0.0
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.10768144865148686,
+            "recall@10": 0.2517482517482518
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.03115531268982664,
+            "recall@10": 0.06713286713286713
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.02348240387243512,
+            "recall@10": 0.03496503496503497
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.02053978954718201,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.017787722811476274,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.014422146324086211,
+            "recall@10": 0.0
+          }
+        }
+      },
+      "sushi_fluct_tables": {
+        "clean": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.4224099205441916,
+            "recall@10": 0.7
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.10181664726072129,
+            "recall@10": 0.2
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.013547113327457203,
+            "recall@10": 0.05
+          }
+        },
+        "negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.24733395989974932,
+            "recall@10": 0.9
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.0582173853973479,
+            "recall@10": 0.3
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.02002646128934872,
+            "recall@10": 0.05
+          }
+        },
+        "noisy": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3523766511266511,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.07168005355969284,
+            "recall@10": 0.1
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.05829791110632958,
+            "recall@10": 0.05
+          }
+        },
+        "positive spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.33350378787878787,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.06438572521064104,
+            "recall@10": 0.15
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.00421969423037218,
+            "recall@10": 0.0
+          }
+        },
+        "positive-and-negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.23396520146520147,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.07077029656473045,
+            "recall@10": 0.15
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.00862065463974726,
+            "recall@10": 0.0
+          }
+        },
+        "smooth": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.40472689075630247,
+            "recall@10": 0.9
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.09122150162018886,
+            "recall@10": 0.15
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.006192614815266696,
+            "recall@10": 0.0
+          }
+        },
+        "step": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.1835167732407435,
+            "recall@10": 0.6
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.023558229166070747,
+            "recall@10": 0.05
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.010021881942613713,
+            "recall@10": 0.0
+          }
+        }
+      }
+    },
+    "44": {
+      "g6a_dev": 0.0,
+      "g6b_dev": 0.0013550135501355087,
+      "tied_queries_unperturbed": {
+        "truce": 18,
+        "sushi": 0
+      },
+      "overall_mrr": {
+        "unperturbed": 0.14897975142621236,
+        "resample": 0.03848507300075173,
+        "gaussian": 0.02537547499474189
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.5,
+            "recall@10": 1.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.25,
+            "recall@10": 1.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 1.0,
+            "recall@10": 1.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.35796817665891734,
+            "recall@10": 0.7777777777777778
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.10733114255440741,
+            "recall@10": 0.21481481481481482
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.019301742099911954,
+            "recall@10": 0.05185185185185185
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.6666666666666666,
+            "recall@10": 1.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.5416666666666666,
+            "recall@10": 1.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.017676767676767676,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.015227096370215076,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.014285243244852239,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.1083454238190406,
+            "recall@10": 0.2
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.11021687584550595,
+            "recall@10": 0.2629370629370629
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.021721439553194857,
+            "recall@10": 0.02937062937062937
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.02488216876584241,
+            "recall@10": 0.039160839160839164
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.023924973622561532,
+            "recall@10": 0.05555555555555555
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.07118153813276486,
+            "recall@10": 0.05555555555555555
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.015041500250870437,
+            "recall@10": 0.0
+          }
+        }
+      },
+      "sushi_fluct_tables": {
+        "clean": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.3699562937062937,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.19433311709291376,
+            "recall@10": 0.35
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.05691234186179408,
+            "recall@10": 0.05
+          }
+        },
+        "negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.2709307811753464,
+            "recall@10": 0.75
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.05219318928932469,
+            "recall@10": 0.15
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.02407946624048666,
+            "recall@10": 0.1
+          }
+        },
+        "noisy": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.4830822510822511,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.071468560163881,
+            "recall@10": 0.25
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.030415425898936876,
+            "recall@10": 0.05
+          }
+        },
+        "positive spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.460610119047619,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.1523292101011884,
+            "recall@10": 0.3
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.022319802414137856,
+            "recall@10": 0.05
+          }
+        },
+        "positive-and-negative spike": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.33270308123249304,
+            "recall@10": 0.8
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.23331010682219286,
+            "recall@10": 0.35
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.010643786295116258,
+            "recall@10": 0.0
+          }
+        },
+        "smooth": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.45863095238095236,
+            "recall@10": 0.85
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.10554373372953774,
+            "recall@10": 0.2
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.013598506487330391,
+            "recall@10": 0.05
+          }
+        },
+        "step": {
+          "unperturbed": {
+            "n": 20,
+            "mrr": 0.19870504715606993,
+            "recall@10": 0.65
+          },
+          "resample": {
+            "n": 20,
+            "mrr": 0.03614062837654487,
+            "recall@10": 0.1
+          },
+          "gaussian": {
+            "n": 20,
+            "mrr": 0.0258527835119571,
+            "recall@10": 0.1
+          }
+        }
+      }
+    }
+  }
+}

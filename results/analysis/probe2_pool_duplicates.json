@@ -1,0 +1,15 @@
+{
+  "n_pool": 386,
+  "duplicate_groups": [
+    [
+      "truce_synth:pilot13/165.png",
+      "truce_synth:pilot13/326.png",
+      "truce_synth:pilot13/360.png"
+    ],
+    [
+      "truce_synth:pilot13/58.png",
+      "truce_synth:pilot13/86.png"
+    ]
+  ],
+  "n_queries_affected": 15
+}

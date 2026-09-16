@@ -1,0 +1,144 @@
+{
+  "script": "verify_n5_investigation_v2.py",
+  "items_file": "data\\processed\\narrative_probe_items_certified.jsonl",
+  "results_file": "results\\experiments\\trace_narrative_per_item.jsonl",
+  "rules_imported_from": "verify_n5_investigation.py",
+  "n_items": 400,
+  "n_joined": 1200,
+  "A_mismatch": 0,
+  "B_vocab_changed": 336,
+  "B_frame_identical": 40,
+  "slices": {
+    "identical": {
+      "n_items": 40,
+      "n_records": 120,
+      "acc_by_seed": {
+        "mask13": 0.9,
+        "mask14": 0.9,
+        "mask15": 0.9
+      },
+      "acc_pooled": 0.9,
+      "mean_margin": 0.20038070594891905,
+      "n_correct_by_seed": {
+        "mask13": 36,
+        "mask14": 36,
+        "mask15": 36
+      },
+      "duration_classes": {
+        "week": 20,
+        "28_days": 12,
+        "six_months": 8
+      }
+    },
+    "changed": {
+      "n_items": 360,
+      "n_records": 1080,
+      "acc_by_seed": {
+        "mask13": 0.9277777777777778,
+        "mask14": 0.9388888888888889,
+        "mask15": 0.9194444444444444
+      },
+      "acc_pooled": 0.9287037037037037,
+      "mean_margin": 0.2505546414026025,
+      "n_correct_by_seed": {
+        "mask13": 334,
+        "mask14": 338,
+        "mask15": 331
+      },
+      "duration_classes": {
+        "week": 111,
+        "28_days": 123,
+        "six_months": 126
+      }
+    }
+  },
+  "expected": {
+    "n_items": 400,
+    "n_joined": 1200,
+    "A_mismatch": 0,
+    "B_vocab_changed": 336,
+    "B_frame_identical": 40,
+    "C": {
+      "identical": {
+        "by_seed": {
+          "mask13": 0.9,
+          "mask14": 0.9,
+          "mask15": 0.9
+        },
+        "pooled": 0.9,
+        "mean_margin": 0.2004
+      },
+      "changed": {
+        "by_seed": {
+          "mask13": 0.928,
+          "mask14": 0.939,
+          "mask15": 0.919
+        },
+        "pooled": 0.929,
+        "mean_margin": 0.2506
+      }
+    }
+  },
+  "closure": {
+    "mask13": {
+      "correct_identical": 36,
+      "correct_changed": 334,
+      "summary_acc_swap": 0.925,
+      "closes": true
+    },
+    "mask14": {
+      "correct_identical": 36,
+      "correct_changed": 338,
+      "summary_acc_swap": 0.935,
+      "closes": true
+    },
+    "mask15": {
+      "correct_identical": 36,
+      "correct_changed": 331,
+      "summary_acc_swap": 0.9175,
+      "closes": true
+    }
+  },
+  "frame_identical_item_ids": [
+    "N5|1002|swap",
+    "N5|1028|swap",
+    "N5|1038|swap",
+    "N5|1046|swap",
+    "N5|1047|swap",
+    "N5|1141|swap",
+    "N5|1191|swap",
+    "N5|1193|swap",
+    "N5|1213|swap",
+    "N5|138|swap",
+    "N5|1425|swap",
+    "N5|1505|swap",
+    "N5|1543|swap",
+    "N5|1588|swap",
+    "N5|1589|swap",
+    "N5|1592|swap",
+    "N5|1698|swap",
+    "N5|1806|swap",
+    "N5|1848|swap",
+    "N5|1882|swap",
+    "N5|1917|swap",
+    "N5|1969|swap",
+    "N5|1992|swap",
+    "N5|306|swap",
+    "N5|313|swap",
+    "N5|352|swap",
+    "N5|397|swap",
+    "N5|425|swap",
+    "N5|510|swap",
+    "N5|591|swap",
+    "N5|635|swap",
+    "N5|72|swap",
+    "N5|737|swap",
+    "N5|741|swap",
+    "N5|748|swap",
+    "N5|759|swap",
+    "N5|821|swap",
+    "N5|864|swap",
+    "N5|874|swap",
+    "N5|895|swap"
+  ]
+}

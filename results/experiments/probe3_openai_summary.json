@@ -1,0 +1,369 @@
+{
+  "model": "text-embedding-3-large",
+  "conditions": [
+    "resample",
+    "gaussian"
+  ],
+  "seed_scheme": "int(sha256('{sample_id}|{cond}|{arm_seed}')[:12hex],16)",
+  "registered_degenerates": [
+    "sushi:clean\\00\\0000009"
+  ],
+  "g4_buffer": 0.02,
+  "gf_margin": 0.05,
+  "n_new_strings": 0,
+  "new_tokens": 0,
+  "cost_usd": 0.0,
+  "tied_queries_unperturbed": {
+    "truce": 24,
+    "sushi": 0
+  },
+  "duplicate_serialisation_groups": [
+    [
+      "truce_synth:pilot13/58.png",
+      "truce_synth:pilot13/86.png",
+      "truce_synth:pilot13/249.png",
+      "truce_synth:pilot13/362.png"
+    ],
+    [
+      "truce_synth:pilot13/87.png",
+      "truce_synth:pilot13/165.png",
+      "truce_synth:pilot13/326.png",
+      "truce_synth:pilot13/360.png"
+    ]
+  ],
+  "arms": {
+    "42": {
+      "overall_mrr": {
+        "unperturbed": 0.027256349763220868,
+        "resample": 0.019584737655223984,
+        "gaussian": 0.023553141181916953
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.003355704697986577,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.003663003663003663,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 0.0035087719298245615,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.0036981432081201696,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.0032575197136966647,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.0036770450586060296,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.003123300841312404,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.0032048621325881117,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.003780302617804121,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.20622353503807975,
+            "recall@10": 0.2
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.02350052246603971,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.10561810807710828,
+            "recall@10": 0.2
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.029517897629913366,
+            "recall@10": 0.06153846153846154
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.022834658071276583,
+            "recall@10": 0.043356643356643354
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.026917299411504256,
+            "recall@10": 0.039160839160839164
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.07108679835388904,
+            "recall@10": 0.05555555555555555
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.01638160635840528,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.02170373737773048,
+            "recall@10": 0.05555555555555555
+          }
+        }
+      }
+    },
+    "43": {
+      "overall_mrr": {
+        "unperturbed": 0.027256349763220868,
+        "resample": 0.022224825465887124,
+        "gaussian": 0.022669587854096805
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.003355704697986577,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.0037593984962406013,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 0.0036363636363636364,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.0036981432081201696,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.003224413679662327,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.0034972663781810786,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.003123300841312404,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.0034145519931895038,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.0038375211686456005,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.20622353503807975,
+            "recall@10": 0.2
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.006888728777242873,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.007769490861672695,
+            "recall@10": 0.0
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.029517897629913366,
+            "recall@10": 0.06153846153846154
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.026243275477037795,
+            "recall@10": 0.046153846153846156
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.026668329982767403,
+            "recall@10": 0.04055944055944056
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.07108679835388904,
+            "recall@10": 0.05555555555555555
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.01457209421429146,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.017004296363585688,
+            "recall@10": 0.0
+          }
+        }
+      }
+    },
+    "44": {
+      "overall_mrr": {
+        "unperturbed": 0.027256349763220868,
+        "resample": 0.021991772120254688,
+        "gaussian": 0.021409334081329064
+      },
+      "tables": {
+        "sushi/degenerate": {
+          "unperturbed": {
+            "n": 1,
+            "mrr": 0.003355704697986577,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 1,
+            "mrr": 0.003663003663003663,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 1,
+            "mrr": 0.003663003663003663,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/dependent": {
+          "unperturbed": {
+            "n": 135,
+            "mrr": 0.0036981432081201696,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 135,
+            "mrr": 0.0032290145698659414,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 135,
+            "mrr": 0.003342427780134131,
+            "recall@10": 0.0
+          }
+        },
+        "sushi/invariant": {
+          "unperturbed": {
+            "n": 4,
+            "mrr": 0.003123300841312404,
+            "recall@10": 0.0
+          },
+          "resample": {
+            "n": 4,
+            "mrr": 0.0033420094696653096,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 4,
+            "mrr": 0.007020950361114296,
+            "recall@10": 0.0
+          }
+        },
+        "truce/ambiguous": {
+          "unperturbed": {
+            "n": 5,
+            "mrr": 0.20622353503807975,
+            "recall@10": 0.2
+          },
+          "resample": {
+            "n": 5,
+            "mrr": 0.020087904391104493,
+            "recall@10": 0.0
+          },
+          "gaussian": {
+            "n": 5,
+            "mrr": 0.00728873613939206,
+            "recall@10": 0.0
+          }
+        },
+        "truce/dependent": {
+          "unperturbed": {
+            "n": 715,
+            "mrr": 0.029517897629913366,
+            "recall@10": 0.06153846153846154
+          },
+          "resample": {
+            "n": 715,
+            "mrr": 0.025533904147751686,
+            "recall@10": 0.05034965034965035
+          },
+          "gaussian": {
+            "n": 715,
+            "mrr": 0.024026631612674793,
+            "recall@10": 0.04195804195804196
+          }
+        },
+        "truce/invariant": {
+          "unperturbed": {
+            "n": 18,
+            "mrr": 0.07108679835388904,
+            "recall@10": 0.05555555555555555
+          },
+          "resample": {
+            "n": 18,
+            "mrr": 0.027702606972892767,
+            "recall@10": 0.05555555555555555
+          },
+          "gaussian": {
+            "n": 18,
+            "mrr": 0.06105197134566179,
+            "recall@10": 0.2222222222222222
+          }
+        }
+      }
+    }
+  }
+}

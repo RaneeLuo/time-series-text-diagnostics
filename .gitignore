@@ -1,0 +1,19 @@
+# local datasets and processed data (see data/README.md)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# model checkpoints (never in Git; see docs/reproduction.md)
+results/checkpoints/
+
+# caches (text-encoder downloads, OpenAI embedding cache)
+.cache/
+
+# python / editor
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
+Thumbs.db

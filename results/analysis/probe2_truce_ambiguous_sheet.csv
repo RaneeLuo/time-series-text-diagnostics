@@ -1,0 +1,44 @@
+caption,n_rows,splits,label,reason,matched_patterns,verdict_y_n,notes
+(image link broken) pilot16/ba_weekly_1.png,1,train,ambiguous,no_anchor,,y,"Junk ！ broken image filename, no claim to classify."
+It is very volatile.,1,train,ambiguous,idiom,\bvolatil\w*,y,"Idiom ！ as a spread claim it survives shuffling, as temporal wiggle it doesn't. Genuinely ambiguous."
+Plot is straight line,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,"""Straight"" could mean flat (order-free) or a steep straight climb (order matters). Can't tell."
+The clients from,1,train,ambiguous,no_anchor,,y,Fragment ！ no claim.
+at the bottom most of the way,1,test,ambiguous,no_anchor,,y,"Could be invariant ！ ""values near the bottom"" survives shuffling. Exclusion still defensible."
+at the top most of the way,1,train,ambiguous,no_anchor,,y,"Could be invariant ！ same value-claim reading as the ""bottom"" case."
+flow graph value leveled,1,train,ambiguous,no_anchor,,y,"""Leveled"" = low spread (invariant) or leveled-off after a change (dependent). Can't tell."
+flow graph value up and down,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom ！ arguable either way.
+fluctuates throughout,1,train,ambiguous,idiom,\bfluctuat\w*,y,Idiom ！ fluctuation 「 spread (shuffle-proof) or temporal motion. Ambiguous.
+good,1,train,ambiguous,no_anchor,,y,No claim.
+highly placed line,1,train,ambiguous,no_anchor,,n,Belongs in INVARIANT ！ pure level claim. Shuffle the points and the line still sits high. No order/direction mentioned.
+horizontal is the opposite of vertical. in geometry,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,"Off-topic dictionary definition, not about the chart."
+incresae the same,1,train,ambiguous,no_anchor,,n,"Likely DEPENDENT ！ garbled, but ""increase"" is a direction-over-time anchor on any reading (""increases the same"" 「 steady increase)."
+it is like a straight line,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,Straight-line ambiguity ！ flat vs steady climb.
+it seems the rating is high and normal,1,train,ambiguous,no_anchor,,y,"Leans invariant (""high"" is a value claim that survives shuffling) but ""and normal"" is too muddled to place confidently."
+it varries the same,1,train,ambiguous,no_anchor,,y,"""Varies the same"" 「 spread claim, but incoherent. Ambiguous."
+line straight throughout,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,Straight-line ambiguity.
+linear throughout,1,test,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,"""Linear"" = same ambiguity as ""straight""."
+many ups and downs,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom ！ bumpiness with no position. Arguable either way.
+no ordered or unique plot,1,val,ambiguous,no_anchor,,y,"Incoherent ！ ""no ordered or unique"" isn't a placeable claim."
+not big difference while comparing the two points,1,train,ambiguous,no_anchor,,y,"Which two points? First-vs-last would be dependent, but unspecified ！ can't place."
+not sure,1,train,ambiguous,no_anchor,,y,No claim.
+nothing,1,test,ambiguous,no_anchor,,y,No claim.
+"plot definition, a secret plan or scheme purpose",1,train,ambiguous,no_anchor,,y,"Off-topic dictionary definition of ""plot""."
+plot is slightly equal compared to another plots,1,train,ambiguous,no_anchor,,y,"Cross-plot comparison, no placeable claim about this series."
+remains volatile throughout,1,train,ambiguous,idiom,\bvolatil\w*,y,Idiom ！ volatility ambiguity (spread vs temporal motion).
+shattered in the horizontal line,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,"Garbled (""shattered""/""scattered""?) plus the horizontal/straight ambiguity."
+some ups and down,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom.
+somewhat volatile throughout,1,test,ambiguous,idiom,\bvolatil\w*,y,Idiom.
+stay volatile,1,train,ambiguous,idiom,\bvolatil\w*,y,Idiom.
+steady up and down fluctuations throughout,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b; \bfluctuat\w*,y,"Idiom ！ ""steady fluctuations"" is spread-vs-motion ambiguous."
+straight in the volatile manner,1,train,ambiguous,idiom,\bvolatil\w*,y,Self-contradictory (straight + volatile). Can't place.
+straight line of the crossing to the majororts.,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,Garbled beyond recovery.
+the plot is equal compared to other plots,1,train,ambiguous,no_anchor,,y,"Cross-plot comparison, not a claim about this series."
+the up and down f the lines.,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom.
+these are non linear plots,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,Inherits the straight/linear ambiguity in negated form (not-flat vs not-a-steady-trend).
+this explains straight,1,train,ambiguous,straight_alone,\bstraight\b|\blinear\b|\bhorizontal\b,y,Fragment + straight ambiguity.
+this plot explains inrease derease to inccresaes,1,train,ambiguous,no_anchor,,n,Belongs in DEPENDENT ！ despite typos it clearly describes shape over time: increase ★ decrease ★ increase. Does not survive shuffling.
+this plot is completely equal,1,test,ambiguous,no_anchor,,y,"""Completely equal"" = all values equal (invariant) or equal to other plots (unplaceable). Can't tell which."
+up and down mostly along the way,1,train,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom.
+ups & downs,1,val,ambiguous,idiom,\bups?\s+(?:and|&)\s+downs?\b,y,Idiom.
+webpage displayed in the url.,1,train,ambiguous,no_anchor,,y,Junk ！ not about the chart.
+{},7,train,ambiguous,junk,,y,Empty. Nothing to classify.

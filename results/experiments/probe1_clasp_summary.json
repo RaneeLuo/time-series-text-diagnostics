@@ -1,0 +1,177 @@
+{
+  "checkpoints": [
+    "results/checkpoints/best_baseline_seed42.pt",
+    "results/checkpoints/best_baseline_seed43.pt",
+    "results/checkpoints/best_baseline_seed44.pt"
+  ],
+  "n_items": 5540,
+  "per_seed": {
+    "C1_trend_direction|seed42": {
+      "n_random": 205,
+      "n_swap": 205,
+      "acc_random": 0.9902439024390244,
+      "acc_swap": 0.8975609756097561,
+      "gap": 0.09268292682926826,
+      "mean_margin_random": 0.49767119827475853,
+      "mean_margin_swap": 0.23776230586056665
+    },
+    "C1_trend_direction|seed43": {
+      "n_random": 205,
+      "n_swap": 205,
+      "acc_random": 0.9804878048780488,
+      "acc_swap": 0.9073170731707317,
+      "gap": 0.07317073170731703,
+      "mean_margin_random": 0.5009927632423435,
+      "mean_margin_swap": 0.25876231820027273
+    },
+    "C1_trend_direction|seed44": {
+      "n_random": 205,
+      "n_swap": 205,
+      "acc_random": 0.9853658536585366,
+      "acc_swap": 0.926829268292683,
+      "gap": 0.0585365853658536,
+      "mean_margin_random": 0.5034029644482383,
+      "mean_margin_swap": 0.24041376032911968
+    },
+    "C2_trend_family|seed42": {
+      "n_random": 410,
+      "n_swap": 410,
+      "acc_random": 0.9780487804878049,
+      "acc_swap": 0.9341463414634147,
+      "gap": 0.04390243902439017,
+      "mean_margin_random": 0.49505579973366565,
+      "mean_margin_swap": 0.32123415585630005
+    },
+    "C2_trend_family|seed43": {
+      "n_random": 410,
+      "n_swap": 410,
+      "acc_random": 0.9902439024390244,
+      "acc_swap": 0.9560975609756097,
+      "gap": 0.034146341463414664,
+      "mean_margin_random": 0.5134745911149898,
+      "mean_margin_swap": 0.33163199454386966
+    },
+    "C2_trend_family|seed44": {
+      "n_random": 410,
+      "n_swap": 410,
+      "acc_random": 0.9926829268292683,
+      "acc_swap": 0.9634146341463414,
+      "gap": 0.029268292682926855,
+      "mean_margin_random": 0.5207742025916714,
+      "mean_margin_swap": 0.31466307951273714
+    },
+    "C3_periodic_waveform|seed42": {
+      "n_random": 280,
+      "n_swap": 280,
+      "acc_random": 0.925,
+      "acc_swap": 0.75,
+      "gap": 0.17500000000000004,
+      "mean_margin_random": 0.4118029863473826,
+      "mean_margin_swap": 0.09977207050958116
+    },
+    "C3_periodic_waveform|seed43": {
+      "n_random": 280,
+      "n_swap": 280,
+      "acc_random": 0.9321428571428572,
+      "acc_swap": 0.7464285714285714,
+      "gap": 0.18571428571428572,
+      "mean_margin_random": 0.4097478082569848,
+      "mean_margin_swap": 0.13262036190634327
+    },
+    "C3_periodic_waveform|seed44": {
+      "n_random": 280,
+      "n_swap": 280,
+      "acc_random": 0.9178571428571428,
+      "acc_swap": 0.7321428571428571,
+      "gap": 0.18571428571428572,
+      "mean_margin_random": 0.3461098311668528,
+      "mean_margin_swap": 0.12597908804725325
+    },
+    "C4_fluctuation_type|seed42": {
+      "n_random": 990,
+      "n_swap": 990,
+      "acc_random": 0.9666666666666667,
+      "acc_swap": 0.603030303030303,
+      "gap": 0.36363636363636365,
+      "mean_margin_random": 0.45589516208732894,
+      "mean_margin_swap": 0.01978159530953777
+    },
+    "C4_fluctuation_type|seed43": {
+      "n_random": 990,
+      "n_swap": 990,
+      "acc_random": 0.9707070707070707,
+      "acc_swap": 0.592929292929293,
+      "gap": 0.37777777777777777,
+      "mean_margin_random": 0.47157299260143193,
+      "mean_margin_swap": 0.026654943633786957
+    },
+    "C4_fluctuation_type|seed44": {
+      "n_random": 990,
+      "n_swap": 990,
+      "acc_random": 0.9707070707070707,
+      "acc_swap": 0.6,
+      "gap": 0.37070707070707076,
+      "mean_margin_random": 0.4514647993136837,
+      "mean_margin_swap": 0.029066673874140088
+    },
+    "C5_signal_regime|seed42": {
+      "n_random": 885,
+      "n_swap": 885,
+      "acc_random": 0.9514124293785311,
+      "acc_swap": 0.9887005649717514,
+      "gap": -0.037288135593220306,
+      "mean_margin_random": 0.44633443249168536,
+      "mean_margin_swap": 0.500242083288182
+    },
+    "C5_signal_regime|seed43": {
+      "n_random": 885,
+      "n_swap": 885,
+      "acc_random": 0.9491525423728814,
+      "acc_swap": 0.9796610169491525,
+      "gap": -0.03050847457627115,
+      "mean_margin_random": 0.45232133022167503,
+      "mean_margin_swap": 0.49958427439280656
+    },
+    "C5_signal_regime|seed44": {
+      "n_random": 885,
+      "n_swap": 885,
+      "acc_random": 0.9570621468926553,
+      "acc_swap": 0.9830508474576272,
+      "gap": -0.025988700564971823,
+      "mean_margin_random": 0.4219610454293631,
+      "mean_margin_swap": 0.4809089344442101
+    }
+  },
+  "across_seeds": {
+    "C1_trend_direction": {
+      "acc_random_mean": 0.9853658536585366,
+      "acc_swap_mean": 0.910569105691057,
+      "gap_mean": 0.07479674796747963,
+      "gap_sd": 0.017131144313581703
+    },
+    "C2_trend_family": {
+      "acc_random_mean": 0.9869918699186991,
+      "acc_swap_mean": 0.9512195121951219,
+      "gap_mean": 0.03577235772357723,
+      "gap_sd": 0.007451342593424076
+    },
+    "C3_periodic_waveform": {
+      "acc_random_mean": 0.9249999999999999,
+      "acc_swap_mean": 0.7428571428571429,
+      "gap_mean": 0.18214285714285716,
+      "gap_sd": 0.006185895741317397
+    },
+    "C4_fluctuation_type": {
+      "acc_random_mean": 0.9693602693602693,
+      "acc_swap_mean": 0.5986531986531988,
+      "gap_mean": 0.37070707070707076,
+      "gap_sd": 0.007070707070707061
+    },
+    "C5_signal_regime": {
+      "acc_random_mean": 0.9525423728813559,
+      "acc_swap_mean": 0.9838041431261771,
+      "gap_mean": -0.031261770244821095,
+      "gap_sd": 0.005687257578358332
+    }
+  }
+}

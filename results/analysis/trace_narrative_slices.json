@@ -1,0 +1,140 @@
+{
+  "duration_slice": {
+    "N1": {
+      "28_days": {
+        "n_items": 113,
+        "acc_swap_pooled": 0.8967551622418879,
+        "acc_swap_per_seed": {
+          "mask13": 0.912,
+          "mask14": 0.894,
+          "mask15": 0.885
+        },
+        "acc_random_pooled": 1.0
+      },
+      "six_months": {
+        "n_items": 52,
+        "acc_swap_pooled": 0.9358974358974359,
+        "acc_swap_per_seed": {
+          "mask13": 0.942,
+          "mask14": 0.904,
+          "mask15": 0.962
+        },
+        "acc_random_pooled": 1.0
+      },
+      "week": {
+        "n_items": 235,
+        "acc_swap_pooled": 0.8638297872340426,
+        "acc_swap_per_seed": {
+          "mask13": 0.872,
+          "mask14": 0.868,
+          "mask15": 0.851
+        },
+        "acc_random_pooled": 0.9957446808510638
+      }
+    },
+    "P_dur_confirmed": true,
+    "N2": {
+      "six_months": {
+        "n_items": 208,
+        "acc_swap_pooled": 0.9439102564102564,
+        "acc_swap_per_seed": {
+          "mask13": 0.942,
+          "mask14": 0.942,
+          "mask15": 0.947
+        },
+        "acc_random_pooled": 0.9967948717948718
+      },
+      "week": {
+        "n_items": 192,
+        "acc_swap_pooled": 0.9375,
+        "acc_swap_per_seed": {
+          "mask13": 0.932,
+          "mask14": 0.927,
+          "mask15": 0.953
+        },
+        "acc_random_pooled": 0.9947916666666666
+      }
+    },
+    "N3": {
+      "28_days": {
+        "n_items": 261,
+        "acc_swap_pooled": 0.7420178799489144,
+        "acc_swap_per_seed": {
+          "mask13": 0.736,
+          "mask14": 0.739,
+          "mask15": 0.751
+        },
+        "acc_random_pooled": 0.9961685823754789
+      },
+      "six_months": {
+        "n_items": 23,
+        "acc_swap_pooled": 0.8405797101449275,
+        "acc_swap_per_seed": {
+          "mask13": 0.826,
+          "mask14": 0.87,
+          "mask15": 0.826
+        },
+        "acc_random_pooled": 0.9710144927536232
+      },
+      "week": {
+        "n_items": 105,
+        "acc_swap_pooled": 0.6476190476190476,
+        "acc_swap_per_seed": {
+          "mask13": 0.657,
+          "mask14": 0.648,
+          "mask15": 0.638
+        },
+        "acc_random_pooled": 0.9968253968253968
+      }
+    },
+    "N5": {
+      "28_days": {
+        "n_items": 135,
+        "acc_swap_pooled": 0.9777777777777777,
+        "acc_swap_per_seed": {
+          "mask13": 0.978,
+          "mask14": 0.985,
+          "mask15": 0.97
+        },
+        "acc_random_pooled": 1.0
+      },
+      "six_months": {
+        "n_items": 134,
+        "acc_swap_pooled": 0.9477611940298507,
+        "acc_swap_per_seed": {
+          "mask13": 0.94,
+          "mask14": 0.963,
+          "mask15": 0.94
+        },
+        "acc_random_pooled": 1.0
+      },
+      "week": {
+        "n_items": 131,
+        "acc_swap_pooled": 0.8498727735368957,
+        "acc_swap_per_seed": {
+          "mask13": 0.855,
+          "mask14": 0.855,
+          "mask15": 0.84
+        },
+        "acc_random_pooled": 1.0
+      }
+    }
+  },
+  "header_vs_prose": {
+    "mask13": {
+      "header": 0.9183333333333333,
+      "prose": 0.7197943444730077,
+      "gap": 0.19853898886032562
+    },
+    "mask14": {
+      "header": 0.9166666666666666,
+      "prose": 0.7223650385604113,
+      "gap": 0.1943016281062553
+    },
+    "mask15": {
+      "header": 0.9141666666666667,
+      "prose": 0.7249357326478149,
+      "gap": 0.18923093401885183
+    }
+  }
+}

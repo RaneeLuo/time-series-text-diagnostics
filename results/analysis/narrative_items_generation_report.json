@@ -1,0 +1,57 @@
+{
+  "seed": 42,
+  "per_component_cap": 400,
+  "eligible": {
+    "N1": 462,
+    "N2": 1256,
+    "N3": 777,
+    "N4": 0,
+    "N5": 2006
+  },
+  "n_items": 3200,
+  "swap_items": {
+    "N1": 400,
+    "N2": 400,
+    "N3": 400,
+    "N5": 400
+  },
+  "random_items": {
+    "N1": 400,
+    "N2": 400,
+    "N3": 400,
+    "N5": 400
+  },
+  "mean_length_delta": {
+    "N1": 0.0,
+    "N2": 0.0675,
+    "N3": 0.0,
+    "N5": 0.0325,
+    "N4": null
+  },
+  "skips": {
+    "N1:internal_contradiction": 1345,
+    "N1:post_swap_contradiction": 199,
+    "N2:28day_excluded": 679,
+    "N2:no_from_to": 61,
+    "N2:end_date_unparsed": 5,
+    "N2:unrecognised_duration": 5,
+    "N3:mixed_polarity": 382,
+    "N3:checkable_reference": 606,
+    "N3:numeric_leak": 145,
+    "N3:no_trend_phrase": 93,
+    "N3:trend_pinned_to_value": 3,
+    "N4:temp_blocked_words": 1479,
+    "N4:vis_blocked_words": 744,
+    "N4:vis_no_stable_word": 1230,
+    "N4:temp_no_flux_word": 526,
+    "N4:direction_dropped:stable->fluctuating": 32,
+    "N4:direction_dropped:fluctuating->stable": 1,
+    "N4:component_dropped_total": 0
+  },
+  "duration_classes": {
+    "six_months": 688,
+    "week": 634,
+    "28_days": 679,
+    "other": 5
+  }
+}

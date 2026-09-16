@@ -1,0 +1,1309 @@
+{
+  "n_signals": 1400,
+  "restricted_to": "279 probe signals from probe1_clasp_per_item.jsonl",
+  "protocol": "identical features, classifier and folds as information_availability.json; out-of-fold predictions scored on the restricted population",
+  "n_features": 16,
+  "classifier": "logistic regression on standardised features",
+  "cv": "stratified 5-fold, seed 42",
+  "gates_passed": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "multiclass": {
+    "fluctuation_7way": {
+      "full": 0.6835714285714286,
+      "restricted_279": 0.7096774193548387
+    },
+    "shape_20way": {
+      "full": 0.7385714285714285,
+      "restricted_279": 0.7060931899641577
+    }
+  },
+  "per_component": {
+    "C1_trend_direction": {
+      "mean_binary_acc": 0.9910714285714286,
+      "mean_binary_acc_full": 0.9883928571428572,
+      "max_abs_pair_delta": 0.014285714285714346,
+      "n_pairs_scored": 8
+    },
+    "C2_trend_family": {
+      "mean_binary_acc": 0.9395667989417991,
+      "mean_binary_acc_full": 0.9486607142857142,
+      "max_abs_pair_delta": 0.07857142857142851,
+      "n_pairs_scored": 16
+    },
+    "C3_periodic_waveform": {
+      "mean_binary_acc": 0.9178571428571429,
+      "mean_binary_acc_full": 0.9185714285714287,
+      "max_abs_pair_delta": 0.042857142857142816,
+      "n_pairs_scored": 10
+    },
+    "C4_fluctuation_type": {
+      "mean_binary_acc": 0.9308333333333334,
+      "mean_binary_acc_full": 0.9293333333333332,
+      "max_abs_pair_delta": 0.03749999999999998,
+      "n_pairs_scored": 15
+    },
+    "C5_signal_regime": {
+      "mean_binary_acc": 0.9741622574955907,
+      "mean_binary_acc_full": 0.9781904761904759,
+      "max_abs_pair_delta": 0.0714285714285714,
+      "n_pairs_scored": 75
+    }
+  },
+  "pair_detail": {
+    "C1_trend_direction": [
+      {
+        "a": "linear increase",
+        "b": "linear decrease",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "exponential decay",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "inverted exponential growth",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "inverted sigmoid",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "inverted gaussian",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "convex",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "negative cubic function",
+        "acc": 1.0,
+        "n": 27,
+        "n_a_279": 14,
+        "n_b_279": 13,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "sawtooth wave",
+        "b": "reverse sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.95,
+        "n_full": 140
+      }
+    ],
+    "C2_trend_family": [
+      {
+        "a": "concave",
+        "b": "cubic function",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "gaussian",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9285714285714286,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "inverted gaussian",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9285714285714286,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "negative cubic function",
+        "acc": 1.0,
+        "n": 27,
+        "n_a_279": 14,
+        "n_b_279": 13,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "gaussian",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9428571428571428,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "inverted sigmoid",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9714285714285714,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "linear decrease",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9714285714285714,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "linear increase",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9571428571428572,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "sigmoid",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.95,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "linear increase",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9285714285714286,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "sigmoid",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9428571428571428,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "inverted sigmoid",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9571428571428572,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "linear decrease",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "negative cubic function",
+        "acc": 0.9259259259259259,
+        "n": 27,
+        "n_a_279": 14,
+        "n_b_279": 13,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "linear decrease",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.8642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "sigmoid",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9285714285714286,
+        "n_full": 140
+      }
+    ],
+    "C3_periodic_waveform": [
+      {
+        "a": "reverse sawtooth wave",
+        "b": "sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.95,
+        "n_full": 140
+      },
+      {
+        "a": "reverse sawtooth wave",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "reverse sawtooth wave",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9571428571428572,
+        "n_full": 140
+      },
+      {
+        "a": "reverse sawtooth wave",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "sawtooth wave",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "sawtooth wave",
+        "b": "square wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "sawtooth wave",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "sinusoidal wave",
+        "b": "square wave",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9428571428571428,
+        "n_full": 140
+      },
+      {
+        "a": "sinusoidal wave",
+        "b": "triangle wave",
+        "acc": 0.4642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.5071428571428571,
+        "n_full": 140
+      },
+      {
+        "a": "square wave",
+        "b": "triangle wave",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9428571428571428,
+        "n_full": 140
+      }
+    ],
+    "C4_fluctuation_type": [
+      {
+        "a": "negative spike",
+        "b": "noisy",
+        "acc": 1.0,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9975,
+        "n_full": 400
+      },
+      {
+        "a": "negative spike",
+        "b": "positive spike",
+        "acc": 0.7375,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.775,
+        "n_full": 400
+      },
+      {
+        "a": "negative spike",
+        "b": "positive-and-negative spike",
+        "acc": 0.875,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.84,
+        "n_full": 400
+      },
+      {
+        "a": "negative spike",
+        "b": "smooth",
+        "acc": 0.95,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.96,
+        "n_full": 400
+      },
+      {
+        "a": "negative spike",
+        "b": "step",
+        "acc": 0.9125,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.8975,
+        "n_full": 400
+      },
+      {
+        "a": "noisy",
+        "b": "positive spike",
+        "acc": 1.0,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9975,
+        "n_full": 400
+      },
+      {
+        "a": "noisy",
+        "b": "positive-and-negative spike",
+        "acc": 0.9875,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9975,
+        "n_full": 400
+      },
+      {
+        "a": "noisy",
+        "b": "smooth",
+        "acc": 0.9375,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.95,
+        "n_full": 400
+      },
+      {
+        "a": "noisy",
+        "b": "step",
+        "acc": 0.9875,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.99,
+        "n_full": 400
+      },
+      {
+        "a": "positive spike",
+        "b": "positive-and-negative spike",
+        "acc": 0.875,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.86,
+        "n_full": 400
+      },
+      {
+        "a": "positive spike",
+        "b": "smooth",
+        "acc": 0.95,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.96,
+        "n_full": 400
+      },
+      {
+        "a": "positive spike",
+        "b": "step",
+        "acc": 0.875,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.8825,
+        "n_full": 400
+      },
+      {
+        "a": "positive-and-negative spike",
+        "b": "smooth",
+        "acc": 0.975,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9675,
+        "n_full": 400
+      },
+      {
+        "a": "positive-and-negative spike",
+        "b": "step",
+        "acc": 0.975,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9475,
+        "n_full": 400
+      },
+      {
+        "a": "smooth",
+        "b": "step",
+        "acc": 0.925,
+        "n": 80,
+        "n_a_279": 40,
+        "n_b_279": 40,
+        "acc_full": 0.9175,
+        "n_full": 400
+      }
+    ],
+    "C5_signal_regime": [
+      {
+        "a": "concave",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "concave",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "constant",
+        "b": "reverse sawtooth wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9142857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "constant",
+        "b": "sawtooth wave",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9357142857142857,
+        "n_full": 140
+      },
+      {
+        "a": "constant",
+        "b": "sinusoidal wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9071428571428571,
+        "n_full": 140
+      },
+      {
+        "a": "constant",
+        "b": "square wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9071428571428571,
+        "n_full": 140
+      },
+      {
+        "a": "constant",
+        "b": "triangle wave",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.8928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "convex",
+        "b": "triangle wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "cubic function",
+        "b": "triangle wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "reverse sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential decay",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "exponential growth",
+        "b": "triangle wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "reverse sawtooth wave",
+        "acc": 0.9285714285714286,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "sinusoidal wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.8571428571428571,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "gaussian",
+        "b": "triangle wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.8642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential decay",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "square wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted exponential growth",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "reverse sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "sawtooth wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "sinusoidal wave",
+        "acc": 0.8928571428571429,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "inverted gaussian",
+        "b": "triangle wave",
+        "acc": 0.7142857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.7857142857142857,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "square wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "inverted sigmoid",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "linear decrease",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "linear decrease",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "linear decrease",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "linear decrease",
+        "b": "square wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "linear decrease",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 1.0,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "linear increase",
+        "b": "triangle wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9714285714285714,
+        "n_full": 140
+      },
+      {
+        "a": "negative cubic function",
+        "b": "reverse sawtooth wave",
+        "acc": 0.9259259259259259,
+        "n": 27,
+        "n_a_279": 13,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "negative cubic function",
+        "b": "sawtooth wave",
+        "acc": 0.9259259259259259,
+        "n": 27,
+        "n_a_279": 13,
+        "n_b_279": 14,
+        "acc_full": 0.9857142857142858,
+        "n_full": 140
+      },
+      {
+        "a": "negative cubic function",
+        "b": "sinusoidal wave",
+        "acc": 1.0,
+        "n": 27,
+        "n_a_279": 13,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "negative cubic function",
+        "b": "square wave",
+        "acc": 0.9629629629629629,
+        "n": 27,
+        "n_a_279": 13,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "negative cubic function",
+        "b": "triangle wave",
+        "acc": 0.9259259259259259,
+        "n": 27,
+        "n_a_279": 13,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "reverse sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "sawtooth wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "sinusoidal wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9785714285714285,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "square wave",
+        "acc": 1.0,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9928571428571429,
+        "n_full": 140
+      },
+      {
+        "a": "sigmoid",
+        "b": "triangle wave",
+        "acc": 0.9642857142857143,
+        "n": 28,
+        "n_a_279": 14,
+        "n_b_279": 14,
+        "acc_full": 0.9642857142857143,
+        "n_full": 140
+      }
+    ]
+  },
+  "flagged_pairs": []
+}

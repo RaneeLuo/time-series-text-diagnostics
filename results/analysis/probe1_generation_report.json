@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "splits": [
+    "test",
+    "val"
+  ],
+  "per_component_target": 1000,
+  "length_candidates": 3,
+  "n_items": 5540,
+  "per_component": {
+    "C1_trend_direction": {
+      "swap": 205,
+      "random": 205,
+      "mean_abs_word_delta": 0.32195121951219513
+    },
+    "C2_trend_family": {
+      "swap": 410,
+      "random": 410,
+      "mean_abs_word_delta": 5.107317073170732
+    },
+    "C3_periodic_waveform": {
+      "swap": 280,
+      "random": 280,
+      "mean_abs_word_delta": 0.175
+    },
+    "C4_fluctuation_type": {
+      "swap": 990,
+      "random": 990,
+      "mean_abs_word_delta": 0.1717171717171717
+    },
+    "C5_signal_regime": {
+      "swap": 885,
+      "random": 885,
+      "mean_abs_word_delta": 2.456497175141243
+    }
+  },
+  "validation_problems": {},
+  "skipped": {}
+}

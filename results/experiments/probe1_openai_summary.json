@@ -1,0 +1,53 @@
+{
+  "model": "text-embedding-3-large",
+  "serialisation": {
+    "z_normalised": true,
+    "scale": 10,
+    "clip": 99,
+    "points_retained": "all (no decimation)",
+    "median_signal_tokens": 4096
+  },
+  "n_items": 5540,
+  "per_component": {
+    "C1_trend_direction": {
+      "n_random": 205,
+      "n_swap": 205,
+      "acc_random": 0.6634146341463415,
+      "acc_swap": 0.5756097560975609,
+      "gap": 0.08780487804878057,
+      "mean_margin_swap": 0.007045291291504371
+    },
+    "C2_trend_family": {
+      "n_random": 410,
+      "n_swap": 410,
+      "acc_random": 0.6536585365853659,
+      "acc_swap": 0.44634146341463415,
+      "gap": 0.20731707317073172,
+      "mean_margin_swap": -0.003818895631447071
+    },
+    "C3_periodic_waveform": {
+      "n_random": 280,
+      "n_swap": 280,
+      "acc_random": 0.22142857142857142,
+      "acc_swap": 0.5321428571428571,
+      "gap": -0.3107142857142857,
+      "mean_margin_swap": 0.003260316912617002
+    },
+    "C4_fluctuation_type": {
+      "n_random": 990,
+      "n_swap": 990,
+      "acc_random": 0.5525252525252525,
+      "acc_swap": 0.4717171717171717,
+      "gap": 0.08080808080808083,
+      "mean_margin_swap": -0.0007039333420871484
+    },
+    "C5_signal_regime": {
+      "n_random": 885,
+      "n_swap": 885,
+      "acc_random": 0.40451977401129946,
+      "acc_swap": 0.5129943502824859,
+      "gap": -0.1084745762711864,
+      "mean_margin_swap": 0.0030931411153179104
+    }
+  }
+}

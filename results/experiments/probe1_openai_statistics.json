@@ -1,0 +1,205 @@
+{
+  "n_boot": 10000,
+  "equivalence_margin": 0.05,
+  "alpha": 0.05,
+  "unit_of_resampling": "signal",
+  "per_seed_component": {
+    "seedapi|C1_trend_direction": {
+      "n_signals": 205,
+      "acc_swap": 0.5756097560975609,
+      "acc_swap_ci95": [
+        0.5121951219512195,
+        0.6439024390243903
+      ],
+      "acc_random": 0.6634146341463415,
+      "acc_random_ci95": [
+        0.5951219512195122,
+        0.7268292682926829
+      ],
+      "gap": 0.08780487804878057,
+      "gap_ci95": [
+        0.004878048780487809,
+        0.1707317073170731
+      ],
+      "gap_ci90": [
+        0.014634146341463428,
+        0.15609756097560978
+      ],
+      "p_gap": 0.0492,
+      "p_swap_vs_chance": 0.027,
+      "acc_swap_above_chance": true,
+      "wilcoxon_p": 0.0441713449084426,
+      "mean_signal_level_gap": 0.08780487804878048,
+      "equivalence_margin": 0.05,
+      "equivalent_to_zero": false,
+      "p_gap_holm": 0.0492,
+      "significant": true,
+      "void": true
+    },
+    "seedapi|C2_trend_family": {
+      "n_signals": 177,
+      "acc_swap": 0.44634146341463415,
+      "acc_swap_ci95": [
+        0.38957816377171217,
+        0.5046312597809076
+      ],
+      "acc_random": 0.6536585365853659,
+      "acc_random_ci95": [
+        0.5966577023739522,
+        0.7080318164355813
+      ],
+      "gap": 0.20731707317073172,
+      "gap_ci95": [
+        0.14769975786924944,
+        0.26650366748166254
+      ],
+      "gap_ci90": [
+        0.15700483091787443,
+        0.2561576354679803
+      ],
+      "p_gap": 0.0,
+      "p_swap_vs_chance": 0.0706,
+      "acc_swap_above_chance": false,
+      "wilcoxon_p": 2.2735395234813122e-08,
+      "mean_signal_level_gap": 0.211864406779661,
+      "equivalence_margin": 0.05,
+      "equivalent_to_zero": false,
+      "p_gap_holm": 0.0,
+      "significant": true,
+      "void": true
+    },
+    "seedapi|C3_periodic_waveform": {
+      "n_signals": 70,
+      "acc_swap": 0.5321428571428571,
+      "acc_swap_ci95": [
+        0.4607142857142857,
+        0.6000892857142844
+      ],
+      "acc_random": 0.22142857142857142,
+      "acc_random_ci95": [
+        0.15714285714285714,
+        0.2892857142857143
+      ],
+      "gap": -0.3107142857142857,
+      "gap_ci95": [
+        -0.3857142857142857,
+        -0.23571428571428568
+      ],
+      "gap_ci90": [
+        -0.37142857142857144,
+        -0.24642857142857144
+      ],
+      "p_gap": 0.0,
+      "p_swap_vs_chance": 0.402,
+      "acc_swap_above_chance": false,
+      "wilcoxon_p": 1.3773827507689945e-08,
+      "mean_signal_level_gap": -0.3107142857142857,
+      "equivalence_margin": 0.05,
+      "equivalent_to_zero": false,
+      "p_gap_holm": 0.0,
+      "significant": true,
+      "void": true
+    },
+    "seedapi|C4_fluctuation_type": {
+      "n_signals": 240,
+      "acc_swap": 0.4717171717171717,
+      "acc_swap_ci95": [
+        0.425531914893617,
+        0.5179132778455372
+      ],
+      "acc_random": 0.5525252525252525,
+      "acc_random_ci95": [
+        0.5065587010181258,
+        0.6
+      ],
+      "gap": 0.08080808080808083,
+      "gap_ci95": [
+        0.024665348390105788,
+        0.136917151321825
+      ],
+      "gap_ci90": [
+        0.03303256817188704,
+        0.12825916598982082
+      ],
+      "p_gap": 0.0038,
+      "p_swap_vs_chance": 0.2372,
+      "acc_swap_above_chance": false,
+      "wilcoxon_p": 0.006676817315058384,
+      "mean_signal_level_gap": 0.07465277777777778,
+      "equivalence_margin": 0.05,
+      "equivalent_to_zero": false,
+      "p_gap_holm": 0.0076,
+      "significant": true,
+      "void": true
+    },
+    "seedapi|C5_signal_regime": {
+      "n_signals": 248,
+      "acc_swap": 0.5129943502824859,
+      "acc_swap_ci95": [
+        0.4458563820592264,
+        0.5846363421276266
+      ],
+      "acc_random": 0.40451977401129946,
+      "acc_random_ci95": [
+        0.35333297644539613,
+        0.4590178519339595
+      ],
+      "gap": -0.1084745762711864,
+      "gap_ci95": [
+        -0.1577019257135023,
+        -0.06216491284665852
+      ],
+      "gap_ci90": [
+        -0.14994644870349494,
+        -0.06938105249593121
+      ],
+      "p_gap": 0.0,
+      "p_swap_vs_chance": 0.698,
+      "acc_swap_above_chance": false,
+      "wilcoxon_p": 2.407563654549992e-14,
+      "mean_signal_level_gap": -0.21929723502304146,
+      "equivalence_margin": 0.05,
+      "equivalent_to_zero": false,
+      "p_gap_holm": 0.0,
+      "significant": true,
+      "void": true
+    }
+  },
+  "replication": {
+    "C1_trend_direction": {
+      "gap_mean": 0.08780487804878057,
+      "gap_sd": null,
+      "n_runs": 1,
+      "void": true,
+      "claim": "VOID \u2014 both conditions near chance; the gap carries no information about shortcuts"
+    },
+    "C2_trend_family": {
+      "gap_mean": 0.20731707317073172,
+      "gap_sd": null,
+      "n_runs": 1,
+      "void": true,
+      "claim": "VOID \u2014 both conditions near chance; the gap carries no information about shortcuts"
+    },
+    "C3_periodic_waveform": {
+      "gap_mean": -0.3107142857142857,
+      "gap_sd": null,
+      "n_runs": 1,
+      "void": true,
+      "claim": "VOID \u2014 both conditions near chance; the gap carries no information about shortcuts"
+    },
+    "C4_fluctuation_type": {
+      "gap_mean": 0.08080808080808083,
+      "gap_sd": null,
+      "n_runs": 1,
+      "void": true,
+      "claim": "VOID \u2014 both conditions near chance; the gap carries no information about shortcuts"
+    },
+    "C5_signal_regime": {
+      "gap_mean": -0.1084745762711864,
+      "gap_sd": null,
+      "n_runs": 1,
+      "void": true,
+      "claim": "VOID \u2014 both conditions near chance; the gap carries no information about shortcuts"
+    }
+  }
+}

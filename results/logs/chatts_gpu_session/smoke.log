@@ -1,0 +1,26 @@
+=== ChatTS GPU runner ===
+torch 2.4.1+cu121; cuda available: True
+[GR-cuda] PASS — CUDA device present
+[GR0-weights] PASS — weight bytes = 29,750,198,302 (expected 29,750,198,302; 6 shards)
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:07<00:36,  7.34s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:14<00:28,  7.22s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:21<00:21,  7.14s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:29<00:14,  7.44s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:36<00:07,  7.42s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:37<00:00,  5.20s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:37<00:00,  6.28s/it]
+[GR3-letters] PASS — letter candidate token ids: {'A': [32, 362], 'B': [33, 425]} (each side needs >=1 single-token id)
+[GR2-chatts_probe1_mcq] PASS — rows = 11080 (expected 11080)
+[GR1-chatts_probe1_mcq] PASS — template-sha mismatches: 0 (expected 0)
+[GR2-chatts_probe2_mcq] PASS — rows = 1756 (expected 1756)
+[GR1-chatts_probe2_mcq] PASS — template-sha mismatches: 0 (expected 0)
+[GR2-chatts_probe3_mcq] PASS — rows = 3912 (expected 3912)
+[GR1-chatts_probe3_mcq] PASS — template-sha mismatches: 0 (expected 0)
+[GR6-manualpath] PASS — GPU-env manual-path equivalence: 0/50 mismatches (expected 0)
+=== SMOKE STAGE ===
+[smoke] probe 1 block main: 16 answered; splice deltas {('sushi', 126): 16}
+[GR4-splice-1-main] PASS — splice arithmetic (SUSHI +126, TRUCE -1): {('sushi', 126): 16}
+[smoke] probe 2 block main: 16 answered; splice deltas {('sushi', 126): 3, ('truce', -1): 13}
+[GR4-splice-2-main] PASS — splice arithmetic (SUSHI +126, TRUCE -1): {('sushi', 126): 3, ('truce', -1): 13}
+[smoke] probe 3 block base: 16 answered; splice deltas {('truce', -1): 14, ('sushi', 126): 2}
+[GR4-splice-3-base] PASS — splice arithmetic (SUSHI +126, TRUCE -1): {('truce', -1): 14, ('sushi', 126): 2}
+[smoke] probe 3 block five_number: 16 answered; splice deltas {('truce', 0): 15, ('sushi', 0): 1}
+[smoke] probe 3 block pj_control: 16 answered; splice deltas {('sushi', 126): 10, ('truce', -1): 6}
+[GR4-splice-3-pj_control] PASS — splice arithmetic (SUSHI +126, TRUCE -1): {('sushi', 126): 10, ('truce', -1): 6}
+[smoke] median forward time 43 ms; projected full arm ~0.4 h for 31356 questions (registered band: 1-3 h)
+[GR5-determinism] PASS — repeat-question choices all stable (letter-level; logit bitwise not required — GPU float reality, rule pre-named)
+SMOKE GREEN — full runs may start.

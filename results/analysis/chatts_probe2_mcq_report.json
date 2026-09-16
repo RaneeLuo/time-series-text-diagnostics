@@ -1,0 +1,58 @@
+{
+  "rows_out": 1756,
+  "planned_gpu_questions": 9340,
+  "conditions": {
+    "truce": [
+      "unperturbed",
+      "sf_all",
+      "sf_half",
+      "ex_half",
+      "masking"
+    ],
+    "sushi": [
+      "unperturbed",
+      "sf_all",
+      "sf_half",
+      "ex_half",
+      "masking",
+      "sf_within_patch",
+      "sf_across_patch"
+    ]
+  },
+  "groups": {
+    "truce": {
+      "dependent": 715,
+      "ambiguous": 5,
+      "invariant": 18
+    },
+    "sushi": {
+      "dependent": 135,
+      "degenerate": 1,
+      "invariant": 4
+    }
+  },
+  "truce_sources": {
+    "truce_synth": 168,
+    "truce_stock": 570
+  },
+  "pools": {
+    "truce": {
+      "unique_test_texts": 670,
+      "junk_excluded": [],
+      "pool_size": 670
+    },
+    "sushi": {
+      "unique_test_texts": 140,
+      "junk_excluded": [],
+      "pool_size": 140
+    }
+  },
+  "truce_distractor_groups": {
+    "dependent": 709,
+    "invariant": 27,
+    "ambiguous": 2
+  },
+  "template_sha": "4029f94e2f6d",
+  "seed_formula": "sha256(caption_id|p2mcq|42)[:8] as int",
+  "masking_rule": "M1-C: fill masked positions with survivors' mean (exact fill-0 at model input level); prefix-drift and scaling-touched counts reported by the GPU runner"
+}

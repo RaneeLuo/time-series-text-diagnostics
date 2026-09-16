@@ -1,0 +1,115 @@
+{
+  "n_items": 5540,
+  "per_component_condition": {
+    "C1_trend_direction|random": {
+      "n": 205,
+      "mean_signed_word_diff": -0.12195121951219512,
+      "mean_abs_word_diff": 8.492682926829268,
+      "mean_signed_char_diff": -1.4780487804878049,
+      "prop_correct_longer": 0.47804878048780486,
+      "always_pick_longer_accuracy": 0.4975609756097561
+    },
+    "C1_trend_direction|swap": {
+      "n": 205,
+      "mean_signed_word_diff": 0.03902439024390244,
+      "mean_abs_word_diff": 0.32195121951219513,
+      "mean_signed_char_diff": -0.6292682926829268,
+      "prop_correct_longer": 0.12195121951219512,
+      "always_pick_longer_accuracy": 0.5170731707317073
+    },
+    "C2_trend_family|random": {
+      "n": 410,
+      "mean_signed_word_diff": 0.3804878048780488,
+      "mean_abs_word_diff": 9.06341463414634,
+      "mean_signed_char_diff": 2.2585365853658534,
+      "prop_correct_longer": 0.5170731707317073,
+      "always_pick_longer_accuracy": 0.5341463414634147
+    },
+    "C2_trend_family|swap": {
+      "n": 410,
+      "mean_signed_word_diff": 0.375609756097561,
+      "mean_abs_word_diff": 5.107317073170732,
+      "mean_signed_char_diff": 1.0121951219512195,
+      "prop_correct_longer": 0.4219512195121951,
+      "always_pick_longer_accuracy": 0.4975609756097561
+    },
+    "C3_periodic_waveform|random": {
+      "n": 280,
+      "mean_signed_word_diff": -2.3035714285714284,
+      "mean_abs_word_diff": 7.225,
+      "mean_signed_char_diff": -16.535714285714285,
+      "prop_correct_longer": 0.4035714285714286,
+      "always_pick_longer_accuracy": 0.42142857142857143
+    },
+    "C3_periodic_waveform|swap": {
+      "n": 280,
+      "mean_signed_word_diff": 0.0035714285714285713,
+      "mean_abs_word_diff": 0.175,
+      "mean_signed_char_diff": 0.11071428571428571,
+      "prop_correct_longer": 0.08214285714285714,
+      "always_pick_longer_accuracy": 0.5142857142857142
+    },
+    "C4_fluctuation_type|random": {
+      "n": 990,
+      "mean_signed_word_diff": 1.8292929292929292,
+      "mean_abs_word_diff": 8.324242424242424,
+      "mean_signed_char_diff": 12.17878787878788,
+      "prop_correct_longer": 0.5393939393939394,
+      "always_pick_longer_accuracy": 0.5585858585858586
+    },
+    "C4_fluctuation_type|swap": {
+      "n": 990,
+      "mean_signed_word_diff": -0.00202020202020202,
+      "mean_abs_word_diff": 0.1717171717171717,
+      "mean_signed_char_diff": -0.6363636363636364,
+      "prop_correct_longer": 0.05454545454545454,
+      "always_pick_longer_accuracy": 0.4954545454545455
+    },
+    "C5_signal_regime|random": {
+      "n": 885,
+      "mean_signed_word_diff": -1.4067796610169492,
+      "mean_abs_word_diff": 8.227118644067797,
+      "mean_signed_char_diff": -8.666666666666666,
+      "prop_correct_longer": 0.4406779661016949,
+      "always_pick_longer_accuracy": 0.4610169491525424
+    },
+    "C5_signal_regime|swap": {
+      "n": 885,
+      "mean_signed_word_diff": 0.18305084745762712,
+      "mean_abs_word_diff": 2.456497175141243,
+      "mean_signed_char_diff": -0.42259887005649716,
+      "prop_correct_longer": 0.2858757062146893,
+      "always_pick_longer_accuracy": 0.5
+    }
+  },
+  "length_margin_correlation": {
+    "n_matched": 16620,
+    "overall": {
+      "random": -0.06239597402082412,
+      "swap": 0.022742509014653918
+    },
+    "per_component": {
+      "C1_trend_direction": {
+        "random": -0.09873832046852915,
+        "swap": 0.10921868030670565
+      },
+      "C2_trend_family": {
+        "random": -0.08888796973630829,
+        "swap": -0.05277654643577495
+      },
+      "C3_periodic_waveform": {
+        "random": -0.20950635851058494,
+        "swap": 0.04829053461160471
+      },
+      "C4_fluctuation_type": {
+        "random": -0.026201059738466287,
+        "swap": -0.0777186838145031
+      },
+      "C5_signal_regime": {
+        "random": -0.08155928374260228,
+        "swap": 0.043886692665420994
+      }
+    },
+    "results_file": "results/experiments/probe1_clasp_per_item.jsonl"
+  }
+}

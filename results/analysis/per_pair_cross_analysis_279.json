@@ -1,0 +1,3603 @@
+{
+  "resolves": "probe1_findings_clasp.md section 7 open item 1",
+  "conventions": {
+    "direction_collapse": "unordered pairs; items pooled over both directions and all three seeds",
+    "swap_from_convention": "swap_from = signal's true value (verified in generate_probe1_items.py)",
+    "min_signals_for_interpretation": 10,
+    "min_signals_pre_registered": 10,
+    "correlation": "Spearman primary, Pearson secondary; bootstrap CI over pairs (rough at these n)",
+    "control_asymmetry": "feature accs: 5-fold CV, 1400 signals; CLaSP accs: 279 probe signals"
+  },
+  "gates_passed": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "central_quantity": {
+    "n_clasp_failing_pairs_lt_070": 19,
+    "feature_acc_on_failing_pairs": {
+      "min": 0.4642857142857143,
+      "median": 0.95,
+      "max": 1.0
+    },
+    "feature_hard_pairs_lt_085": [
+      {
+        "component": "C3_periodic_waveform",
+        "a": "sinusoidal wave",
+        "b": "triangle wave",
+        "feature_acc": 0.4642857142857143,
+        "clasp_swap_acc": 0.6547619047619048
+      },
+      {
+        "component": "C4_fluctuation_type",
+        "a": "negative spike",
+        "b": "positive spike",
+        "feature_acc": 0.7375,
+        "clasp_swap_acc": 0.5303030303030303
+      },
+      {
+        "component": "C5_signal_regime",
+        "a": "inverted gaussian",
+        "b": "triangle wave",
+        "feature_acc": 0.7142857142857143,
+        "clasp_swap_acc": 1.0
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "component": "C1_trend_direction",
+      "a": "reverse sawtooth wave",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 0.44047619047619047,
+      "clasp_seed_sd": 0.12542444943872305,
+      "clasp_per_seed": {
+        "42": 0.32142857142857145,
+        "43": 0.42857142857142855,
+        "44": 0.5714285714285714
+      },
+      "clasp_per_direction": {
+        "sawtooth wave->reverse sawtooth wave": [
+          0.2619047619047619,
+          42
+        ],
+        "reverse sawtooth wave->sawtooth wave": [
+          0.6190476190476191,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.5238095238095238,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "gaussian",
+      "b": "inverted gaussian",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9285714285714286,
+        "43": 0.9285714285714286,
+        "44": 0.8928571428571429
+      },
+      "clasp_per_direction": {
+        "gaussian->inverted gaussian": [
+          0.9285714285714286,
+          42
+        ],
+        "inverted gaussian->gaussian": [
+          0.9047619047619048,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.04761904761904767,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "cubic function",
+      "b": "negative cubic function",
+      "clasp_swap_acc": 0.9629629629629629,
+      "clasp_seed_sd": 0.06415002990995845,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.8888888888888888,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->negative cubic function": [
+          1.0,
+          18
+        ],
+        "negative cubic function->cubic function": [
+          0.8888888888888888,
+          9
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 27,
+      "shortfall": 0.03703703703703709,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "linear decrease",
+      "b": "linear increase",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->linear decrease": [
+          1.0,
+          42
+        ],
+        "linear decrease->linear increase": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "exponential decay",
+      "b": "exponential growth",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->exponential decay": [
+          1.0,
+          42
+        ],
+        "exponential decay->exponential growth": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "inverted exponential decay",
+      "b": "inverted exponential growth",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->inverted exponential growth": [
+          1.0,
+          42
+        ],
+        "inverted exponential growth->inverted exponential decay": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "inverted sigmoid",
+      "b": "sigmoid",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "sigmoid->inverted sigmoid": [
+          1.0,
+          42
+        ],
+        "inverted sigmoid->sigmoid": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C1_trend_direction",
+      "a": "concave",
+      "b": "convex",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->convex": [
+          1.0,
+          42
+        ],
+        "convex->concave": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted sigmoid",
+      "b": "linear decrease",
+      "clasp_swap_acc": 0.8571428571428571,
+      "clasp_seed_sd": 0.035714285714285754,
+      "clasp_per_seed": {
+        "42": 0.8214285714285714,
+        "43": 0.8571428571428571,
+        "44": 0.8928571428571429
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->linear decrease": [
+          0.9285714285714286,
+          42
+        ],
+        "linear decrease->inverted sigmoid": [
+          0.7857142857142857,
+          42
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": 0.07142857142857151,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "exponential decay",
+      "b": "linear decrease",
+      "clasp_swap_acc": 0.8690476190476191,
+      "clasp_seed_sd": 0.04123930494211617,
+      "clasp_per_seed": {
+        "42": 0.8214285714285714,
+        "43": 0.8928571428571429,
+        "44": 0.8928571428571429
+      },
+      "clasp_per_direction": {
+        "exponential decay->linear decrease": [
+          0.9761904761904762,
+          42
+        ],
+        "linear decrease->exponential decay": [
+          0.7619047619047619,
+          42
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": 0.023809523809523836,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted exponential growth",
+      "b": "linear decrease",
+      "clasp_swap_acc": 0.9047619047619048,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.8928571428571429,
+        "43": 0.8928571428571429,
+        "44": 0.9285714285714286
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->linear decrease": [
+          0.9761904761904762,
+          42
+        ],
+        "linear decrease->inverted exponential growth": [
+          0.8333333333333334,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.059523809523809534,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted exponential decay",
+      "b": "linear increase",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.05455447255899813,
+      "clasp_per_seed": {
+        "42": 0.8571428571428571,
+        "43": 0.9285714285714286,
+        "44": 0.9642857142857143
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->linear increase": [
+          0.8571428571428571,
+          42
+        ],
+        "linear increase->inverted exponential decay": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.04761904761904767,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted gaussian",
+      "b": "negative cubic function",
+      "clasp_swap_acc": 0.9215686274509803,
+      "clasp_seed_sd": 0.033961780540566235,
+      "clasp_per_seed": {
+        "42": 0.8823529411764706,
+        "43": 0.9411764705882353,
+        "44": 0.9411764705882353
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->negative cubic function": [
+          0.9285714285714286,
+          42
+        ],
+        "negative cubic function->inverted gaussian": [
+          0.8888888888888888,
+          9
+        ]
+      },
+      "feature_acc": 0.9259259259259259,
+      "feature_n": 27,
+      "shortfall": 0.004357298474945592,
+      "n_items": 51,
+      "n_signals": 17,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "convex",
+      "b": "negative cubic function",
+      "clasp_swap_acc": 0.9411764705882353,
+      "clasp_seed_sd": 0.05882352941176472,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.8823529411764706,
+        "44": 0.9411764705882353
+      },
+      "clasp_per_direction": {
+        "convex->negative cubic function": [
+          1.0,
+          42
+        ],
+        "negative cubic function->convex": [
+          0.6666666666666666,
+          9
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 27,
+      "shortfall": 0.05882352941176472,
+      "n_items": 51,
+      "n_signals": 17,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "convex",
+      "b": "inverted gaussian",
+      "clasp_swap_acc": 0.9642857142857143,
+      "clasp_seed_sd": 0.0357142857142857,
+      "clasp_per_seed": {
+        "42": 0.9285714285714286,
+        "43": 1.0,
+        "44": 0.9642857142857143
+      },
+      "clasp_per_direction": {
+        "convex->inverted gaussian": [
+          0.9761904761904762,
+          42
+        ],
+        "inverted gaussian->convex": [
+          0.9523809523809523,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "exponential growth",
+      "b": "linear increase",
+      "clasp_swap_acc": 0.9642857142857143,
+      "clasp_seed_sd": 0.0357142857142857,
+      "clasp_per_seed": {
+        "42": 0.9285714285714286,
+        "43": 0.9642857142857143,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->linear increase": [
+          0.9523809523809523,
+          42
+        ],
+        "linear increase->exponential growth": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.0714285714285714,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted exponential growth",
+      "b": "inverted sigmoid",
+      "clasp_swap_acc": 0.9642857142857143,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 0.9642857142857143,
+        "44": 0.9642857142857143
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->inverted sigmoid": [
+          1.0,
+          42
+        ],
+        "inverted sigmoid->inverted exponential growth": [
+          0.9285714285714286,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "exponential decay",
+      "b": "inverted sigmoid",
+      "clasp_swap_acc": 0.9761904761904762,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 1.0,
+        "44": 0.9642857142857143
+      },
+      "clasp_per_direction": {
+        "exponential decay->inverted sigmoid": [
+          1.0,
+          42
+        ],
+        "inverted sigmoid->exponential decay": [
+          0.9523809523809523,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.011904761904761862,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "cubic function",
+      "b": "gaussian",
+      "clasp_swap_acc": 0.9833333333333333,
+      "clasp_seed_sd": 0.028867513459481315,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.95
+      },
+      "clasp_per_direction": {
+        "cubic function->gaussian": [
+          1.0,
+          18
+        ],
+        "gaussian->cubic function": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.09047619047619038,
+      "n_items": 60,
+      "n_signals": 20,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "exponential growth",
+      "b": "sigmoid",
+      "clasp_swap_acc": 0.9880952380952381,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->sigmoid": [
+          1.0,
+          42
+        ],
+        "sigmoid->exponential growth": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.09523809523809523,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "inverted exponential decay",
+      "b": "sigmoid",
+      "clasp_swap_acc": 0.9880952380952381,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.9642857142857143,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->sigmoid": [
+          1.0,
+          42
+        ],
+        "sigmoid->inverted exponential decay": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.023809523809523836,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "linear increase",
+      "b": "sigmoid",
+      "clasp_swap_acc": 0.9880952380952381,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->sigmoid": [
+          1.0,
+          42
+        ],
+        "sigmoid->linear increase": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": -0.059523809523809534,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "concave",
+      "b": "cubic function",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->cubic function": [
+          1.0,
+          42
+        ],
+        "cubic function->concave": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 60,
+      "n_signals": 20,
+      "interpretable": true
+    },
+    {
+      "component": "C2_trend_family",
+      "a": "concave",
+      "b": "gaussian",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->gaussian": [
+          1.0,
+          42
+        ],
+        "gaussian->concave": [
+          1.0,
+          42
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.1071428571428571,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "reverse sawtooth wave",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 0.47619047619047616,
+      "clasp_seed_sd": 0.10309826235529031,
+      "clasp_per_seed": {
+        "42": 0.5357142857142857,
+        "43": 0.35714285714285715,
+        "44": 0.5357142857142857
+      },
+      "clasp_per_direction": {
+        "reverse sawtooth wave->sawtooth wave": [
+          0.7619047619047619,
+          42
+        ],
+        "sawtooth wave->reverse sawtooth wave": [
+          0.19047619047619047,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.48809523809523814,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "reverse sawtooth wave",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.5238095238095238,
+      "clasp_seed_sd": 0.11480536620229706,
+      "clasp_per_seed": {
+        "42": 0.6071428571428571,
+        "43": 0.39285714285714285,
+        "44": 0.5714285714285714
+      },
+      "clasp_per_direction": {
+        "reverse sawtooth wave->triangle wave": [
+          0.7380952380952381,
+          42
+        ],
+        "triangle wave->reverse sawtooth wave": [
+          0.30952380952380953,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.47619047619047616,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "sawtooth wave",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.5238095238095238,
+      "clasp_seed_sd": 0.1254244494387231,
+      "clasp_per_seed": {
+        "42": 0.39285714285714285,
+        "43": 0.6428571428571429,
+        "44": 0.5357142857142857
+      },
+      "clasp_per_direction": {
+        "sawtooth wave->triangle wave": [
+          0.5476190476190477,
+          42
+        ],
+        "triangle wave->sawtooth wave": [
+          0.5,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.47619047619047616,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "sinusoidal wave",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.6547619047619048,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.6428571428571429,
+        "43": 0.6785714285714286,
+        "44": 0.6428571428571429
+      },
+      "clasp_per_direction": {
+        "sinusoidal wave->triangle wave": [
+          0.5238095238095238,
+          42
+        ],
+        "triangle wave->sinusoidal wave": [
+          0.7857142857142857,
+          42
+        ]
+      },
+      "feature_acc": 0.4642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.19047619047619047,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "sawtooth wave",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 0.7261904761904762,
+      "clasp_seed_sd": 0.10309826235529033,
+      "clasp_per_seed": {
+        "42": 0.7857142857142857,
+        "43": 0.7857142857142857,
+        "44": 0.6071428571428571
+      },
+      "clasp_per_direction": {
+        "sawtooth wave->sinusoidal wave": [
+          0.7380952380952381,
+          42
+        ],
+        "sinusoidal wave->sawtooth wave": [
+          0.7142857142857143,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.23809523809523814,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "reverse sawtooth wave",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 0.7380952380952381,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.75,
+        "43": 0.75,
+        "44": 0.7142857142857143
+      },
+      "clasp_per_direction": {
+        "reverse sawtooth wave->sinusoidal wave": [
+          0.8809523809523809,
+          42
+        ],
+        "sinusoidal wave->reverse sawtooth wave": [
+          0.5952380952380952,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.22619047619047616,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "sinusoidal wave",
+      "b": "square wave",
+      "clasp_swap_acc": 0.8928571428571429,
+      "clasp_seed_sd": 0.07142857142857145,
+      "clasp_per_seed": {
+        "42": 0.8928571428571429,
+        "43": 0.9642857142857143,
+        "44": 0.8214285714285714
+      },
+      "clasp_per_direction": {
+        "sinusoidal wave->square wave": [
+          0.8809523809523809,
+          42
+        ],
+        "square wave->sinusoidal wave": [
+          0.9047619047619048,
+          42
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": 0.0357142857142857,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "square wave",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9404761904761905,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 0.9285714285714286,
+        "44": 0.9285714285714286
+      },
+      "clasp_per_direction": {
+        "square wave->triangle wave": [
+          0.9047619047619048,
+          42
+        ],
+        "triangle wave->square wave": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": -0.011904761904761862,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "sawtooth wave",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9642857142857143,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 0.9642857142857143,
+        "44": 0.9642857142857143
+      },
+      "clasp_per_direction": {
+        "sawtooth wave->square wave": [
+          0.9761904761904762,
+          42
+        ],
+        "square wave->sawtooth wave": [
+          0.9523809523809523,
+          42
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C3_periodic_waveform",
+      "a": "reverse sawtooth wave",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9880952380952381,
+      "clasp_seed_sd": 0.020619652471058052,
+      "clasp_per_seed": {
+        "42": 0.9642857142857143,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "reverse sawtooth wave->square wave": [
+          1.0,
+          42
+        ],
+        "square wave->reverse sawtooth wave": [
+          0.9761904761904762,
+          42
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.011904761904761862,
+      "n_items": 84,
+      "n_signals": 28,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "negative spike",
+      "b": "smooth",
+      "clasp_swap_acc": 0.4595959595959596,
+      "clasp_seed_sd": 0.03154039393130505,
+      "clasp_per_seed": {
+        "42": 0.48484848484848486,
+        "43": 0.4696969696969697,
+        "44": 0.42424242424242425
+      },
+      "clasp_per_direction": {
+        "negative spike->smooth": [
+          0.5151515151515151,
+          99
+        ],
+        "smooth->negative spike": [
+          0.40404040404040403,
+          99
+        ]
+      },
+      "feature_acc": 0.95,
+      "feature_n": 80,
+      "shortfall": 0.49040404040404034,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "positive spike",
+      "b": "positive-and-negative spike",
+      "clasp_swap_acc": 0.4898989898989899,
+      "clasp_seed_sd": 0.008747731351357958,
+      "clasp_per_seed": {
+        "42": 0.48484848484848486,
+        "43": 0.5,
+        "44": 0.48484848484848486
+      },
+      "clasp_per_direction": {
+        "positive spike->positive-and-negative spike": [
+          0.6161616161616161,
+          99
+        ],
+        "positive-and-negative spike->positive spike": [
+          0.36363636363636365,
+          99
+        ]
+      },
+      "feature_acc": 0.875,
+      "feature_n": 80,
+      "shortfall": 0.3851010101010101,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "negative spike",
+      "b": "positive spike",
+      "clasp_swap_acc": 0.5303030303030303,
+      "clasp_seed_sd": 0.05462956477975741,
+      "clasp_per_seed": {
+        "42": 0.5454545454545454,
+        "43": 0.5757575757575758,
+        "44": 0.4696969696969697
+      },
+      "clasp_per_direction": {
+        "negative spike->positive spike": [
+          0.41414141414141414,
+          99
+        ],
+        "positive spike->negative spike": [
+          0.6464646464646465,
+          99
+        ]
+      },
+      "feature_acc": 0.7375,
+      "feature_n": 80,
+      "shortfall": 0.20719696969696977,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "negative spike",
+      "b": "positive-and-negative spike",
+      "clasp_swap_acc": 0.5505050505050505,
+      "clasp_seed_sd": 0.03813047694581189,
+      "clasp_per_seed": {
+        "42": 0.5909090909090909,
+        "43": 0.5454545454545454,
+        "44": 0.5151515151515151
+      },
+      "clasp_per_direction": {
+        "negative spike->positive-and-negative spike": [
+          0.5959595959595959,
+          99
+        ],
+        "positive-and-negative spike->negative spike": [
+          0.5050505050505051,
+          99
+        ]
+      },
+      "feature_acc": 0.875,
+      "feature_n": 80,
+      "shortfall": 0.3244949494949495,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "positive-and-negative spike",
+      "b": "smooth",
+      "clasp_swap_acc": 0.5505050505050505,
+      "clasp_seed_sd": 0.04870530687370181,
+      "clasp_per_seed": {
+        "42": 0.5303030303030303,
+        "43": 0.5151515151515151,
+        "44": 0.6060606060606061
+      },
+      "clasp_per_direction": {
+        "positive-and-negative spike->smooth": [
+          0.5757575757575758,
+          99
+        ],
+        "smooth->positive-and-negative spike": [
+          0.5252525252525253,
+          99
+        ]
+      },
+      "feature_acc": 0.975,
+      "feature_n": 80,
+      "shortfall": 0.4244949494949495,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "negative spike",
+      "b": "step",
+      "clasp_swap_acc": 0.5707070707070707,
+      "clasp_seed_sd": 0.05736271056363914,
+      "clasp_per_seed": {
+        "42": 0.5454545454545454,
+        "43": 0.6363636363636364,
+        "44": 0.5303030303030303
+      },
+      "clasp_per_direction": {
+        "negative spike->step": [
+          0.3434343434343434,
+          99
+        ],
+        "step->negative spike": [
+          0.797979797979798,
+          99
+        ]
+      },
+      "feature_acc": 0.9125,
+      "feature_n": 80,
+      "shortfall": 0.34179292929292926,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "positive spike",
+      "b": "smooth",
+      "clasp_swap_acc": 0.5858585858585859,
+      "clasp_seed_sd": 0.0887797769254896,
+      "clasp_per_seed": {
+        "42": 0.6212121212121212,
+        "43": 0.48484848484848486,
+        "44": 0.6515151515151515
+      },
+      "clasp_per_direction": {
+        "positive spike->smooth": [
+          0.6767676767676768,
+          99
+        ],
+        "smooth->positive spike": [
+          0.494949494949495,
+          99
+        ]
+      },
+      "feature_acc": 0.95,
+      "feature_n": 80,
+      "shortfall": 0.3641414141414141,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "negative spike",
+      "b": "noisy",
+      "clasp_swap_acc": 0.6161616161616161,
+      "clasp_seed_sd": 0.03154039393130501,
+      "clasp_per_seed": {
+        "42": 0.5909090909090909,
+        "43": 0.6515151515151515,
+        "44": 0.6060606060606061
+      },
+      "clasp_per_direction": {
+        "negative spike->noisy": [
+          0.46464646464646464,
+          99
+        ],
+        "noisy->negative spike": [
+          0.7676767676767676,
+          99
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 80,
+      "shortfall": 0.38383838383838387,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "positive-and-negative spike",
+      "b": "step",
+      "clasp_swap_acc": 0.6161616161616161,
+      "clasp_seed_sd": 0.08344803859524401,
+      "clasp_per_seed": {
+        "42": 0.6212121212121212,
+        "43": 0.5303030303030303,
+        "44": 0.696969696969697
+      },
+      "clasp_per_direction": {
+        "positive-and-negative spike->step": [
+          0.5050505050505051,
+          99
+        ],
+        "step->positive-and-negative spike": [
+          0.7272727272727273,
+          99
+        ]
+      },
+      "feature_acc": 0.975,
+      "feature_n": 80,
+      "shortfall": 0.35883838383838385,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "noisy",
+      "b": "positive-and-negative spike",
+      "clasp_swap_acc": 0.6262626262626263,
+      "clasp_seed_sd": 0.04628864338339228,
+      "clasp_per_seed": {
+        "42": 0.6666666666666666,
+        "43": 0.6363636363636364,
+        "44": 0.5757575757575758
+      },
+      "clasp_per_direction": {
+        "noisy->positive-and-negative spike": [
+          0.7272727272727273,
+          99
+        ],
+        "positive-and-negative spike->noisy": [
+          0.5252525252525253,
+          99
+        ]
+      },
+      "feature_acc": 0.9875,
+      "feature_n": 80,
+      "shortfall": 0.36123737373737375,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "smooth",
+      "b": "step",
+      "clasp_swap_acc": 0.6414141414141414,
+      "clasp_seed_sd": 0.038130476945811835,
+      "clasp_per_seed": {
+        "42": 0.6363636363636364,
+        "43": 0.6818181818181818,
+        "44": 0.6060606060606061
+      },
+      "clasp_per_direction": {
+        "smooth->step": [
+          0.5454545454545454,
+          99
+        ],
+        "step->smooth": [
+          0.7373737373737373,
+          99
+        ]
+      },
+      "feature_acc": 0.925,
+      "feature_n": 80,
+      "shortfall": 0.2835858585858586,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "noisy",
+      "b": "step",
+      "clasp_swap_acc": 0.6464646464646465,
+      "clasp_seed_sd": 0.07626095389162373,
+      "clasp_per_seed": {
+        "42": 0.5757575757575758,
+        "43": 0.6363636363636364,
+        "44": 0.7272727272727273
+      },
+      "clasp_per_direction": {
+        "noisy->step": [
+          0.5454545454545454,
+          99
+        ],
+        "step->noisy": [
+          0.7474747474747475,
+          99
+        ]
+      },
+      "feature_acc": 0.9875,
+      "feature_n": 80,
+      "shortfall": 0.3410353535353535,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "positive spike",
+      "b": "step",
+      "clasp_swap_acc": 0.6515151515151515,
+      "clasp_seed_sd": 0.015151515151515138,
+      "clasp_per_seed": {
+        "42": 0.6666666666666666,
+        "43": 0.6363636363636364,
+        "44": 0.6515151515151515
+      },
+      "clasp_per_direction": {
+        "positive spike->step": [
+          0.5959595959595959,
+          99
+        ],
+        "step->positive spike": [
+          0.7070707070707071,
+          99
+        ]
+      },
+      "feature_acc": 0.875,
+      "feature_n": 80,
+      "shortfall": 0.2234848484848485,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "noisy",
+      "b": "smooth",
+      "clasp_swap_acc": 0.6818181818181818,
+      "clasp_seed_sd": 0.02624319405407394,
+      "clasp_per_seed": {
+        "42": 0.7121212121212122,
+        "43": 0.6666666666666666,
+        "44": 0.6666666666666666
+      },
+      "clasp_per_direction": {
+        "noisy->smooth": [
+          0.6767676767676768,
+          99
+        ],
+        "smooth->noisy": [
+          0.6868686868686869,
+          99
+        ]
+      },
+      "feature_acc": 0.9375,
+      "feature_n": 80,
+      "shortfall": 0.25568181818181823,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C4_fluctuation_type",
+      "a": "noisy",
+      "b": "positive spike",
+      "clasp_swap_acc": 0.7626262626262627,
+      "clasp_seed_sd": 0.03154039393130502,
+      "clasp_per_seed": {
+        "42": 0.7727272727272727,
+        "43": 0.7272727272727273,
+        "44": 0.7878787878787878
+      },
+      "clasp_per_direction": {
+        "noisy->positive spike": [
+          0.7272727272727273,
+          99
+        ],
+        "positive spike->noisy": [
+          0.797979797979798,
+          99
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 80,
+      "shortfall": 0.23737373737373735,
+      "n_items": 198,
+      "n_signals": 66,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "constant",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 0.8888888888888888,
+      "clasp_seed_sd": 0.048112522432468774,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.8333333333333334,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "constant->sawtooth wave": [
+          0.7777777777777778,
+          18
+        ],
+        "sawtooth wave->constant": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": 0.039682539682539764,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential growth",
+      "b": "square wave",
+      "clasp_swap_acc": 0.8888888888888888,
+      "clasp_seed_sd": 0.048112522432468774,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.8333333333333334,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "exponential growth->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->exponential growth": [
+          0.7777777777777778,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.11111111111111116,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "constant",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.08333333333333331,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.9166666666666666,
+        "44": 0.8333333333333334
+      },
+      "clasp_per_direction": {
+        "constant->reverse sawtooth wave": [
+          0.8888888888888888,
+          18
+        ],
+        "reverse sawtooth wave->constant": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.023809523809523725,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "convex",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.08333333333333331,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.8333333333333334,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "convex->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->convex": [
+          0.8333333333333334,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.08333333333333337,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "gaussian",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "gaussian->sawtooth wave": [
+          0.8333333333333334,
+          18
+        ],
+        "sawtooth wave->gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.04761904761904767,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "gaussian",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "gaussian->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->gaussian": [
+          0.8333333333333334,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.08333333333333337,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "gaussian",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "gaussian->triangle wave": [
+          0.8333333333333334,
+          18
+        ],
+        "triangle wave->gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.023809523809523725,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted gaussian",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9166666666666666,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->inverted gaussian": [
+          0.8333333333333334,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.08333333333333337,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "constant",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 0.9444444444444444,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "constant->sinusoidal wave": [
+          0.8888888888888888,
+          18
+        ],
+        "sinusoidal wave->constant": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.051587301587301515,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear decrease",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9444444444444444,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear decrease->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->linear decrease": [
+          0.8888888888888888,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": 0.019841269841269882,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear increase",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9444444444444444,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 0.9166666666666666,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->linear increase": [
+          0.8888888888888888,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.05555555555555558,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "negative cubic function",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9629629629629629,
+      "clasp_seed_sd": 0.06415002990995845,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.8888888888888888,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "negative cubic function->square wave": [
+          1.0,
+          9
+        ],
+        "square wave->negative cubic function": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 0.9629629629629629,
+      "feature_n": 27,
+      "shortfall": 0.0,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "negative cubic function",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9629629629629629,
+      "clasp_seed_sd": 0.06415002990995845,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.8888888888888888,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "negative cubic function->triangle wave": [
+          0.8888888888888888,
+          9
+        ],
+        "triangle wave->negative cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9259259259259259,
+      "feature_n": 27,
+      "shortfall": -0.03703703703703698,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "concave",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "concave->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->concave": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "convex",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "convex->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->convex": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "cubic function",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.9166666666666666,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->cubic function": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential decay",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "exponential decay->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->exponential decay": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "gaussian",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 0.9166666666666666,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "gaussian->reverse sawtooth wave": [
+          0.9444444444444444,
+          18
+        ],
+        "reverse sawtooth wave->gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": -0.04365079365079361,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted sigmoid",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->inverted sigmoid": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "reverse sawtooth wave",
+      "b": "sigmoid",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "sigmoid->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->sigmoid": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "sigmoid",
+      "b": "square wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 0.9166666666666666,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "sigmoid->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->sigmoid": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.02777777777777779,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "sigmoid",
+      "b": "triangle wave",
+      "clasp_swap_acc": 0.9722222222222222,
+      "clasp_seed_sd": 0.048112522432468836,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 0.9166666666666666
+      },
+      "clasp_per_direction": {
+        "sigmoid->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->sigmoid": [
+          0.9444444444444444,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.007936507936507908,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "concave",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->concave": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "concave",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->concave": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "concave",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->concave": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "concave",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "concave->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->concave": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "constant",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "constant->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->constant": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.1071428571428571,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "constant",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "constant->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->constant": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9285714285714286,
+      "feature_n": 28,
+      "shortfall": -0.0714285714285714,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "convex",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "convex->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->convex": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "convex",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "convex->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->convex": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "convex",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "convex->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->convex": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "cubic function",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "cubic function",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "cubic function",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "cubic function",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "cubic function->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential decay",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential decay->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential decay",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential decay->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential decay",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential decay->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential decay",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential decay->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential growth",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential growth",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential growth",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "exponential growth",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "exponential growth->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "gaussian",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "gaussian->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.1071428571428571,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential decay",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->inverted exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential decay",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->inverted exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential decay",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->inverted exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential decay",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->inverted exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential decay",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential decay->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->inverted exponential decay": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential growth",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->inverted exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential growth",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->inverted exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential growth",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->inverted exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential growth",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->inverted exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted exponential growth",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted exponential growth->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->inverted exponential growth": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted gaussian",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->inverted gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted gaussian",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->inverted gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted gaussian",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->inverted gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.8928571428571429,
+      "feature_n": 28,
+      "shortfall": -0.1071428571428571,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted gaussian",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted gaussian->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->inverted gaussian": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.7142857142857143,
+      "feature_n": 28,
+      "shortfall": -0.2857142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted sigmoid",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->inverted sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted sigmoid",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->inverted sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted sigmoid",
+      "b": "square wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->square wave": [
+          1.0,
+          18
+        ],
+        "square wave->inverted sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "inverted sigmoid",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "inverted sigmoid->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->inverted sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear decrease",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear decrease->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->linear decrease": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear decrease",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear decrease->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->linear decrease": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear decrease",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear decrease->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->linear decrease": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear decrease",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear decrease->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->linear decrease": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear increase",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->reverse sawtooth wave": [
+          1.0,
+          18
+        ],
+        "reverse sawtooth wave->linear increase": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear increase",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->linear increase": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear increase",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->linear increase": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "linear increase",
+      "b": "triangle wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "linear increase->triangle wave": [
+          1.0,
+          18
+        ],
+        "triangle wave->linear increase": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "negative cubic function",
+      "b": "reverse sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "negative cubic function->reverse sawtooth wave": [
+          1.0,
+          9
+        ],
+        "reverse sawtooth wave->negative cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9259259259259259,
+      "feature_n": 27,
+      "shortfall": -0.07407407407407407,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "negative cubic function",
+      "b": "sawtooth wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "negative cubic function->sawtooth wave": [
+          1.0,
+          9
+        ],
+        "sawtooth wave->negative cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9259259259259259,
+      "feature_n": 27,
+      "shortfall": -0.07407407407407407,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "negative cubic function",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "negative cubic function->sinusoidal wave": [
+          1.0,
+          9
+        ],
+        "sinusoidal wave->negative cubic function": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 27,
+      "shortfall": 0.0,
+      "n_items": 27,
+      "n_signals": 9,
+      "interpretable": false
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "sawtooth wave",
+      "b": "sigmoid",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "sigmoid->sawtooth wave": [
+          1.0,
+          18
+        ],
+        "sawtooth wave->sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 1.0,
+      "feature_n": 28,
+      "shortfall": 0.0,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    },
+    {
+      "component": "C5_signal_regime",
+      "a": "sigmoid",
+      "b": "sinusoidal wave",
+      "clasp_swap_acc": 1.0,
+      "clasp_seed_sd": 0.0,
+      "clasp_per_seed": {
+        "42": 1.0,
+        "43": 1.0,
+        "44": 1.0
+      },
+      "clasp_per_direction": {
+        "sigmoid->sinusoidal wave": [
+          1.0,
+          18
+        ],
+        "sinusoidal wave->sigmoid": [
+          1.0,
+          18
+        ]
+      },
+      "feature_acc": 0.9642857142857143,
+      "feature_n": 28,
+      "shortfall": -0.0357142857142857,
+      "n_items": 36,
+      "n_signals": 12,
+      "interpretable": true
+    }
+  ],
+  "correlations": {
+    "C1_trend_direction": {
+      "n_pairs": 7,
+      "spearman": 0.9860132971832694,
+      "spearman_ci95": [
+        0.9165151389911681,
+        1.0
+      ],
+      "pearson": 0.7520337050697262,
+      "pearson_ci95": [
+        0.5405685506365594,
+        1.0
+      ]
+    },
+    "C2_trend_family": {
+      "n_pairs": 16,
+      "spearman": -0.03170651997714362,
+      "spearman_ci95": [
+        -0.5699830929158793,
+        0.5114004902037768
+      ],
+      "pearson": 0.048480916358923286,
+      "pearson_ci95": [
+        -0.48441443887450286,
+        0.5148615058787438
+      ]
+    },
+    "C3_periodic_waveform": {
+      "n_pairs": 10,
+      "spearman": -0.13389110974330104,
+      "spearman_ci95": [
+        -0.8036540752161125,
+        0.6274743058427888
+      ],
+      "pearson": 0.08682915652780489,
+      "pearson_ci95": [
+        -0.8488600269182773,
+        0.5229528970872613
+      ]
+    },
+    "C4_fluctuation_type": {
+      "n_pairs": 15,
+      "spearman": 0.4171232109996294,
+      "spearman_ci95": [
+        -0.12990670302287494,
+        0.8249429965201924
+      ],
+      "pearson": 0.43073484922995936,
+      "pearson_ci95": [
+        0.008837740417812432,
+        0.7230985896763079
+      ]
+    },
+    "C5_signal_regime": {
+      "n_pairs": 70,
+      "spearman": 0.11842930616745857,
+      "spearman_ci95": [
+        -0.14304376852142303,
+        0.3680795621691532
+      ],
+      "pearson": 0.12853634828635196,
+      "pearson_ci95": [
+        -0.09075803778416038,
+        0.4541180219985813
+      ]
+    },
+    "ALL": {
+      "n_pairs": 118,
+      "spearman": 0.40574664285347384,
+      "spearman_ci95": [
+        0.24151022465028762,
+        0.5592488117249431
+      ],
+      "pearson": 0.2909669093277649,
+      "pearson_ci95": [
+        0.09869633977456425,
+        0.46842097611649175
+      ]
+    }
+  }
+}

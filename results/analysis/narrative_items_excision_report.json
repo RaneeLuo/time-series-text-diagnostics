@@ -1,0 +1,38 @@
+{
+  "source": "data\\processed\\narrative_probe_items.jsonl",
+  "certified": "data\\processed\\narrative_probe_items_certified.jsonl",
+  "human_certified_defective_swap_ids": [
+    "N3|1151|swap",
+    "N3|1350|swap",
+    "N3|1401|swap",
+    "N3|1542|swap",
+    "N3|1605|swap",
+    "N3|1774|swap",
+    "N3|1777|swap",
+    "N3|1959|swap",
+    "N3|321|swap",
+    "N3|443|swap",
+    "N3|461|swap"
+  ],
+  "total_removed_including_twins": 22,
+  "counts_before": {
+    "N1/swap": 400,
+    "N1/random": 400,
+    "N2/swap": 400,
+    "N2/random": 400,
+    "N3/swap": 400,
+    "N3/random": 400,
+    "N5/swap": 400,
+    "N5/random": 400
+  },
+  "counts_after": {
+    "N1/swap": 400,
+    "N1/random": 400,
+    "N2/swap": 400,
+    "N2/random": 400,
+    "N3/swap": 389,
+    "N3/random": 389,
+    "N5/swap": 400,
+    "N5/random": 400
+  }
+}

@@ -1,0 +1,3183 @@
+{
+  "purpose": "\u00a74.1 gate (i): C4 information survival under 2048->186 downsampling",
+  "target_len": 186,
+  "windows": {
+    "native": [
+      25,
+      101
+    ],
+    "scaled": [
+      3,
+      9
+    ]
+  },
+  "decision_rule": {
+    "pass_mean": 0.85,
+    "pass_min_pair": 0.7,
+    "condition": "interp186 (scaled windows)"
+  },
+  "verdict": "FAIL",
+  "n_signals": 1400,
+  "results": {
+    "native": {
+      "per_component": {
+        "C1_trend_direction": {
+          "mean_binary_acc": 0.9883928571428572,
+          "min": 0.95,
+          "max": 1.0,
+          "n_pairs": 8
+        },
+        "C2_trend_family": {
+          "mean_binary_acc": 0.9486607142857142,
+          "min": 0.8642857142857142,
+          "max": 0.9928571428571429,
+          "n_pairs": 16
+        },
+        "C3_periodic_waveform": {
+          "mean_binary_acc": 0.9185714285714287,
+          "min": 0.5071428571428571,
+          "max": 0.9857142857142858,
+          "n_pairs": 10
+        },
+        "C4_fluctuation_type": {
+          "mean_binary_acc": 0.9293333333333332,
+          "min": 0.775,
+          "max": 0.9974999999999999,
+          "n_pairs": 15
+        },
+        "C5_signal_regime": {
+          "mean_binary_acc": 0.9781904761904759,
+          "min": 0.7857142857142858,
+          "max": 1.0,
+          "n_pairs": 75
+        }
+      },
+      "pair_detail": {
+        "C1_trend_direction": [
+          {
+            "a": "linear increase",
+            "b": "linear decrease",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "exponential decay",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "inverted exponential growth",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "inverted sigmoid",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "inverted gaussian",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "convex",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "negative cubic function",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.95,
+            "n": 140
+          }
+        ],
+        "C2_trend_family": [
+          {
+            "a": "concave",
+            "b": "cubic function",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "gaussian",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "inverted gaussian",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "negative cubic function",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "gaussian",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "inverted sigmoid",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "linear decrease",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "linear increase",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sigmoid",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "linear increase",
+            "acc": 0.9285714285714285,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sigmoid",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "inverted sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "linear decrease",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "negative cubic function",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "linear decrease",
+            "acc": 0.8642857142857142,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sigmoid",
+            "acc": 0.9285714285714286,
+            "n": 140
+          }
+        ],
+        "C3_periodic_waveform": [
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sawtooth wave",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9571428571428573,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "square wave",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "triangle wave",
+            "acc": 0.5071428571428571,
+            "n": 140
+          },
+          {
+            "a": "square wave",
+            "b": "triangle wave",
+            "acc": 0.9428571428571427,
+            "n": 140
+          }
+        ],
+        "C4_fluctuation_type": [
+          {
+            "a": "negative spike",
+            "b": "noisy",
+            "acc": 0.9974999999999999,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive spike",
+            "acc": 0.775,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.8400000000000001,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "smooth",
+            "acc": 0.96,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "step",
+            "acc": 0.8975,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive spike",
+            "acc": 0.9974999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive-and-negative spike",
+            "acc": 0.9974999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "smooth",
+            "acc": 0.95,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "step",
+            "acc": 0.99,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.8600000000000001,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "smooth",
+            "acc": 0.96,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "step",
+            "acc": 0.8825,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "smooth",
+            "acc": 0.9675,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "step",
+            "acc": 0.9475,
+            "n": 400
+          },
+          {
+            "a": "smooth",
+            "b": "step",
+            "acc": 0.9175000000000001,
+            "n": 400
+          }
+        ],
+        "C5_signal_regime": [
+          {
+            "a": "concave",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9142857142857143,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sawtooth wave",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sinusoidal wave",
+            "acc": 0.9071428571428571,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "square wave",
+            "acc": 0.9071428571428571,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "triangle wave",
+            "acc": 0.8928571428571429,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sinusoidal wave",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "triangle wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.8571428571428571,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "triangle wave",
+            "acc": 0.8642857142857144,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "square wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "triangle wave",
+            "acc": 0.7857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "triangle wave",
+            "acc": 0.9714285714285713,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "triangle wave",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "triangle wave",
+            "acc": 0.9642857142857144,
+            "n": 140
+          }
+        ]
+      }
+    },
+    "interp186": {
+      "per_component": {
+        "C1_trend_direction": {
+          "mean_binary_acc": 0.9866071428571429,
+          "min": 0.9285714285714286,
+          "max": 1.0,
+          "n_pairs": 8
+        },
+        "C2_trend_family": {
+          "mean_binary_acc": 0.9575892857142856,
+          "min": 0.9071428571428571,
+          "max": 0.9928571428571429,
+          "n_pairs": 16
+        },
+        "C3_periodic_waveform": {
+          "mean_binary_acc": 0.9350000000000002,
+          "min": 0.5928571428571427,
+          "max": 0.9928571428571429,
+          "n_pairs": 10
+        },
+        "C4_fluctuation_type": {
+          "mean_binary_acc": 0.7728333333333333,
+          "min": 0.525,
+          "max": 0.9450000000000001,
+          "n_pairs": 15
+        },
+        "C5_signal_regime": {
+          "mean_binary_acc": 0.9846666666666666,
+          "min": 0.8857142857142856,
+          "max": 1.0,
+          "n_pairs": 75
+        }
+      },
+      "pair_detail": {
+        "C1_trend_direction": [
+          {
+            "a": "linear increase",
+            "b": "linear decrease",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "exponential decay",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "inverted exponential growth",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "inverted sigmoid",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "inverted gaussian",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "convex",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "negative cubic function",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          }
+        ],
+        "C2_trend_family": [
+          {
+            "a": "concave",
+            "b": "cubic function",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "gaussian",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "inverted gaussian",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "negative cubic function",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "gaussian",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "inverted sigmoid",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "linear decrease",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "linear increase",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "linear increase",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sigmoid",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "inverted sigmoid",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "linear decrease",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "negative cubic function",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "linear decrease",
+            "acc": 0.9071428571428571,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          }
+        ],
+        "C3_periodic_waveform": [
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sawtooth wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9714285714285713,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "square wave",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "triangle wave",
+            "acc": 0.5928571428571427,
+            "n": 140
+          },
+          {
+            "a": "square wave",
+            "b": "triangle wave",
+            "acc": 0.9428571428571428,
+            "n": 140
+          }
+        ],
+        "C4_fluctuation_type": [
+          {
+            "a": "negative spike",
+            "b": "noisy",
+            "acc": 0.9225,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive spike",
+            "acc": 0.525,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.5700000000000001,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "smooth",
+            "acc": 0.7975,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "step",
+            "acc": 0.6625,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive spike",
+            "acc": 0.9350000000000002,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive-and-negative spike",
+            "acc": 0.9450000000000001,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "smooth",
+            "acc": 0.9199999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "step",
+            "acc": 0.9450000000000001,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.5725,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "smooth",
+            "acc": 0.7949999999999999,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "step",
+            "acc": 0.655,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "smooth",
+            "acc": 0.8675,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "step",
+            "acc": 0.595,
+            "n": 400
+          },
+          {
+            "a": "smooth",
+            "b": "step",
+            "acc": 0.885,
+            "n": 400
+          }
+        ],
+        "C5_signal_regime": [
+          {
+            "a": "concave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sawtooth wave",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sinusoidal wave",
+            "acc": 0.9214285714285715,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "square wave",
+            "acc": 0.9214285714285715,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "triangle wave",
+            "acc": 0.9071428571428571,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9214285714285714,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "square wave",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "triangle wave",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9071428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "square wave",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "triangle wave",
+            "acc": 0.8857142857142856,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sinusoidal wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "square wave",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          }
+        ]
+      }
+    },
+    "decimate186": {
+      "per_component": {
+        "C1_trend_direction": {
+          "mean_binary_acc": 0.9892857142857143,
+          "min": 0.9428571428571428,
+          "max": 1.0,
+          "n_pairs": 8
+        },
+        "C2_trend_family": {
+          "mean_binary_acc": 0.9549107142857143,
+          "min": 0.8857142857142858,
+          "max": 0.9857142857142858,
+          "n_pairs": 16
+        },
+        "C3_periodic_waveform": {
+          "mean_binary_acc": 0.9314285714285715,
+          "min": 0.6071428571428571,
+          "max": 0.9928571428571429,
+          "n_pairs": 10
+        },
+        "C4_fluctuation_type": {
+          "mean_binary_acc": 0.7845,
+          "min": 0.5375,
+          "max": 0.9550000000000001,
+          "n_pairs": 15
+        },
+        "C5_signal_regime": {
+          "mean_binary_acc": 0.9831428571428571,
+          "min": 0.8857142857142856,
+          "max": 1.0,
+          "n_pairs": 75
+        }
+      },
+      "pair_detail": {
+        "C1_trend_direction": [
+          {
+            "a": "linear increase",
+            "b": "linear decrease",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "exponential decay",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "inverted exponential growth",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "inverted sigmoid",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "inverted gaussian",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "convex",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "negative cubic function",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          }
+        ],
+        "C2_trend_family": [
+          {
+            "a": "concave",
+            "b": "cubic function",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "gaussian",
+            "acc": 0.9571428571428573,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "inverted gaussian",
+            "acc": 0.9214285714285715,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "negative cubic function",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "gaussian",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "inverted sigmoid",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "linear decrease",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "linear increase",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "linear increase",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sigmoid",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "inverted sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "linear decrease",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "negative cubic function",
+            "acc": 0.9714285714285713,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "linear decrease",
+            "acc": 0.8857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          }
+        ],
+        "C3_periodic_waveform": [
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sawtooth wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "square wave",
+            "acc": 0.9214285714285714,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "triangle wave",
+            "acc": 0.6071428571428571,
+            "n": 140
+          },
+          {
+            "a": "square wave",
+            "b": "triangle wave",
+            "acc": 0.9285714285714286,
+            "n": 140
+          }
+        ],
+        "C4_fluctuation_type": [
+          {
+            "a": "negative spike",
+            "b": "noisy",
+            "acc": 0.9400000000000001,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive spike",
+            "acc": 0.5375,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.595,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "smooth",
+            "acc": 0.765,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "step",
+            "acc": 0.7124999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive spike",
+            "acc": 0.9400000000000001,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive-and-negative spike",
+            "acc": 0.9525,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "smooth",
+            "acc": 0.9225,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "step",
+            "acc": 0.9550000000000001,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.585,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "smooth",
+            "acc": 0.7825,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "step",
+            "acc": 0.6925,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "smooth",
+            "acc": 0.8700000000000001,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "step",
+            "acc": 0.6399999999999999,
+            "n": 400
+          },
+          {
+            "a": "smooth",
+            "b": "step",
+            "acc": 0.8775000000000001,
+            "n": 400
+          }
+        ],
+        "C5_signal_regime": [
+          {
+            "a": "concave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9714285714285713,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sawtooth wave",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sinusoidal wave",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "square wave",
+            "acc": 0.8928571428571429,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "triangle wave",
+            "acc": 0.9,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9142857142857143,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "square wave",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "triangle wave",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "square wave",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "triangle wave",
+            "acc": 0.8857142857142856,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sinusoidal wave",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "square wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sinusoidal wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "triangle wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          }
+        ]
+      }
+    },
+    "interp186_fixedwin": {
+      "per_component": {
+        "C1_trend_direction": {
+          "mean_binary_acc": 0.9866071428571429,
+          "min": 0.9285714285714286,
+          "max": 1.0,
+          "n_pairs": 8
+        },
+        "C2_trend_family": {
+          "mean_binary_acc": 0.9602678571428571,
+          "min": 0.9214285714285714,
+          "max": 0.9928571428571429,
+          "n_pairs": 16
+        },
+        "C3_periodic_waveform": {
+          "mean_binary_acc": 0.9407142857142858,
+          "min": 0.5857142857142856,
+          "max": 0.9928571428571429,
+          "n_pairs": 10
+        },
+        "C4_fluctuation_type": {
+          "mean_binary_acc": 0.7855000000000001,
+          "min": 0.5375,
+          "max": 0.9625,
+          "n_pairs": 15
+        },
+        "C5_signal_regime": {
+          "mean_binary_acc": 0.9897142857142859,
+          "min": 0.9214285714285715,
+          "max": 1.0,
+          "n_pairs": 75
+        }
+      },
+      "pair_detail": {
+        "C1_trend_direction": [
+          {
+            "a": "linear increase",
+            "b": "linear decrease",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "exponential decay",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "inverted exponential growth",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "inverted sigmoid",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "inverted gaussian",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "convex",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "negative cubic function",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          }
+        ],
+        "C2_trend_family": [
+          {
+            "a": "concave",
+            "b": "cubic function",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "gaussian",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "inverted gaussian",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "negative cubic function",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "gaussian",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "inverted sigmoid",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "linear decrease",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "linear increase",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sigmoid",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "linear increase",
+            "acc": 0.9214285714285714,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sigmoid",
+            "acc": 0.9714285714285713,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "inverted sigmoid",
+            "acc": 0.9571428571428571,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "linear decrease",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "negative cubic function",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "linear decrease",
+            "acc": 0.9285714285714285,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sigmoid",
+            "acc": 0.9714285714285715,
+            "n": 140
+          }
+        ],
+        "C3_periodic_waveform": [
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sawtooth wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "reverse sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9785714285714284,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sawtooth wave",
+            "b": "triangle wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "square wave",
+            "acc": 0.9642857142857144,
+            "n": 140
+          },
+          {
+            "a": "sinusoidal wave",
+            "b": "triangle wave",
+            "acc": 0.5857142857142856,
+            "n": 140
+          },
+          {
+            "a": "square wave",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          }
+        ],
+        "C4_fluctuation_type": [
+          {
+            "a": "negative spike",
+            "b": "noisy",
+            "acc": 0.9325000000000001,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive spike",
+            "acc": 0.5375,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.5425,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "smooth",
+            "acc": 0.79,
+            "n": 400
+          },
+          {
+            "a": "negative spike",
+            "b": "step",
+            "acc": 0.7225,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive spike",
+            "acc": 0.9424999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "positive-and-negative spike",
+            "acc": 0.9524999999999999,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "smooth",
+            "acc": 0.9125,
+            "n": 400
+          },
+          {
+            "a": "noisy",
+            "b": "step",
+            "acc": 0.9625,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "positive-and-negative spike",
+            "acc": 0.5425000000000001,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "smooth",
+            "acc": 0.7924999999999999,
+            "n": 400
+          },
+          {
+            "a": "positive spike",
+            "b": "step",
+            "acc": 0.71,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "smooth",
+            "acc": 0.8574999999999999,
+            "n": 400
+          },
+          {
+            "a": "positive-and-negative spike",
+            "b": "step",
+            "acc": 0.705,
+            "n": 400
+          },
+          {
+            "a": "smooth",
+            "b": "step",
+            "acc": 0.8800000000000001,
+            "n": 400
+          }
+        ],
+        "C5_signal_regime": [
+          {
+            "a": "concave",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "concave",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sawtooth wave",
+            "acc": 0.9571428571428573,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "sinusoidal wave",
+            "acc": 0.9357142857142857,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "square wave",
+            "acc": 0.9642857142857142,
+            "n": 140
+          },
+          {
+            "a": "constant",
+            "b": "triangle wave",
+            "acc": 0.9214285714285715,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "convex",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "cubic function",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential decay",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.95,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "square wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "gaussian",
+            "b": "triangle wave",
+            "acc": 0.9285714285714286,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential decay",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "square wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted exponential growth",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "sinusoidal wave",
+            "acc": 0.9714285714285715,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted gaussian",
+            "b": "triangle wave",
+            "acc": 0.9428571428571428,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "inverted sigmoid",
+            "b": "triangle wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear decrease",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "reverse sawtooth wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sawtooth wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "sinusoidal wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "square wave",
+            "acc": 0.9785714285714286,
+            "n": 140
+          },
+          {
+            "a": "linear increase",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "sinusoidal wave",
+            "acc": 1.0,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "negative cubic function",
+            "b": "triangle wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "reverse sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sawtooth wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "sinusoidal wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "square wave",
+            "acc": 0.9928571428571429,
+            "n": 140
+          },
+          {
+            "a": "sigmoid",
+            "b": "triangle wave",
+            "acc": 0.9857142857142858,
+            "n": 140
+          }
+        ]
+      }
+    }
+  }
+}

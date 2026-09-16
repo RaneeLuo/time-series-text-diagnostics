@@ -1,0 +1,144 @@
+% ============================================================
+% references_skeleton.bib — 2026-08-21; completed 2026-09-04
+% RULE: fields below marked TODO were NOT verified and must not be guessed.
+% Verified facts come from docs/w1_verification_record.md, the state
+% document's verified-facts table, and the source reads of 2026-09-04
+% (arXiv metadata records, Crossref DOI record, the SUSHI README, and
+% alphaXiv full-text reads of the TRUCE, CLaSP and TACO papers).
+% Venue facts pinned:
+%   - TS-Haystack: cite as arXiv preprint (W-1 verdict: venue claim DROPPED
+%     from the paper body). NOTE 2026-09-04: the arXiv v6 comment field
+%     reads "Workshop version of this paper published at ICLR TSALM 2026".
+%     Not applied — W-1 verdict stands until the author decides.
+%   - MMTS-Bench: arXiv 2602.08588, Yin, Xiao, et al.
+%   - ChatTS: VLDB 18(8):2385–2398 (W-1, via TS-Haystack's reference list)
+%   - CLaSP: EUSIPCO 2025 (state doc; NOT visible in arXiv v3 metadata)
+%   - TRACE: NeurIPS 2025 (state doc; NOT visible in arXiv v3 metadata)
+%   - TRUCE: EMNLP 2021, pp. 719–733 (cited identically by CLaSP, TACO, SUSHI README)
+%   - SUSHI: no standalone paper; dataset release (GitHub + Zenodo 13882998)
+% Author lists: complete, from arXiv metadata unless noted.
+% ============================================================
+
+@inproceedings{ito2025clasp,
+  author    = {Ito, Aoi and Dohi, Kota and Kawaguchi, Yohei},
+  title     = {{CLaSP}: Learning Concepts for Time-Series Signals from Natural Language Supervision},
+  booktitle = {Proceedings of the 33rd European Signal Processing Conference (EUSIPCO)},
+  year      = {2025},
+  note      = {arXiv:2411.08397 (v3, August 2025). Venue carried from the project record, not from the arXiv metadata},
+}
+
+@inproceedings{chen2025trace,
+  author    = {Chen, Jialin and Zhao, Ziyu and Nurbek, Gaukhar and Feng, Aosong and Maatouk, Ali and Tassiulas, Leandros and Gao, Yifeng and Ying, Rex},
+  title     = {{TRACE}: Grounding Time Series in Context for Multimodal Embedding and Retrieval},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  note      = {arXiv:2506.09114 (v3, January 2026). Venue carried from the project record, not from the arXiv metadata},
+}
+
+@article{xie2025chatts,
+  author  = {Xie, Zhe and Li, Zeyan and He, Xiao and Xu, Longlong and Wen, Xidao and Zhang, Tieying and Chen, Jianjun and Shi, Rui and Pei, Dan},
+  title   = {{ChatTS}: Aligning Time Series with {LLMs} via Synthetic Data for Enhanced Understanding and Reasoning},
+  journal = {Proceedings of the VLDB Endowment},
+  volume  = {18},
+  number  = {8},
+  pages   = {2385--2398},
+  year    = {2025},
+  note    = {arXiv:2412.03104 (v3, April 2025)},
+}
+
+@inproceedings{jhamtani2021truce,
+  author    = {Jhamtani, Harsh and Berg-Kirkpatrick, Taylor},
+  title     = {Truth-Conditional Captioning of Time Series Data},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2021},
+  pages     = {719--733},
+  note      = {arXiv:2110.01839},
+}
+
+@misc{kawaguchi2024sushi,
+  author       = {Kawaguchi, Yohei and Dohi, Kota and Ito, Aoi},
+  title        = {{SUSHI}: A Dataset of Synthetic Unichannel Signals Based on Heuristic Implementation},
+  year         = {2024},
+  howpublished = {Dataset. GitHub repository and Zenodo record 13882998},
+  url          = {https://github.com/y-kawagu/SUSHI},
+  note         = {No standalone paper; cited as a dataset release, as in the CLaSP and TACO papers. The Tiny release (1.4K signals, CC BY 4.0) is the artifact used in this thesis. Zenodo: https://zenodo.org/records/13882998},
+}
+
+@inproceedings{yuksekgonul2023aro,
+  author    = {Yuksekgonul, Mert and Bianchi, Federico and Kalluri, Pratyusha and Jurafsky, Dan and Zou, James},
+  title     = {When and why vision-language models behave like bags-of-words, and what to do about it?},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  note      = {arXiv:2210.01936. ICLR 2023 oral},
+}
+
+@inproceedings{tan2024order,
+  author    = {Tan, Mingtian and Merrill, Mike A. and Gupta, Vinayak and Althoff, Tim and Hartvigsen, Thomas},
+  title     = {Are Language Models Actually Useful for Time Series Forecasting?},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2024},
+  note      = {arXiv:2406.16964. NeurIPS 2024 spotlight. This is the Diagnostic-2 parent (\S4.4 shuffle/masking ablations); mechanics pinned from paper + code},
+}
+
+@article{geirhos2020shortcut,
+  author  = {Geirhos, Robert and Jacobsen, J{\"o}rn-Henrik and Michaelis, Claudio and Zemel, Richard and Brendel, Wieland and Bethge, Matthias and Wichmann, Felix A.},
+  title   = {Shortcut learning in deep neural networks},
+  journal = {Nature Machine Intelligence},
+  volume  = {2},
+  number  = {11},
+  pages   = {665--673},
+  year    = {2020},
+  doi     = {10.1038/s42256-020-00257-z},
+  note    = {arXiv:2004.07780},
+}
+
+@inproceedings{fons2024features,
+  author    = {Fons, Elizabeth and Kaur, Rachneet and Palande, Soham and Zeng, Zhen and Balch, Tucker and Veloso, Manuela and Vyetrenko, Svitlana},
+  title     = {Evaluating Large Language Models on Time Series Feature Understanding: A Comprehensive Taxonomy and Benchmark},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year      = {2024},
+  note      = {arXiv:2404.16563},
+}
+
+@misc{sen2026bedtime,
+  author        = {Sen, Medhasweta and Gottesman, Zachary and Qiu, Jiaxing and Bruss, C. Bayan and Nguyen, Nam and Hartvigsen, Tom},
+  title         = {{BEDTime}: A Unified Benchmark for Automatically Describing Time Series},
+  year          = {2026},
+  eprint        = {2509.05215},
+  archivePrefix = {arXiv},
+  note          = {arXiv preprint, v3 (April 2026); cite v3 (five datasets incl. NICU-HR per the corrected fact). First posted September 2025},
+}
+
+@misc{yin2026mmtsbench,
+  author        = {Yin, Yao and Xiao, Zhenyu and Li, Musheng and Liu, Yiwen and Nan, Sutong and He, Yiting and Wang, Ruiqi and Zhang, Zhenwei and Liao, Qingmin and Gu, Yuantao},
+  title         = {{MMTS-Bench}: A Comprehensive Benchmark for Time Series Understanding and Reasoning},
+  year          = {2026},
+  eprint        = {2602.08588},
+  archivePrefix = {arXiv},
+  note          = {arXiv preprint, v1 (February 2026)},
+}
+
+@misc{zumarraga2026tshaystack,
+  author        = {Zumarraga, Nicolas and Kaar, Thomas and Wang, Ning and Tennien, William and Hasanli, Alpay and Rosenblattl, Max and Wu, Fan and Riehl, Kevin and Xu, Maxwell A. and Kreft, Markus and O'Sullivan, Kevin and Fleisch, Elgar and Schmiedmayer, Paul and Jakob, Robert and Langer, Patrick},
+  title         = {{TS-Haystack}: A Multi-Task Retrieval Benchmark for Long-Context Time-Series Reasoning},
+  year          = {2026},
+  eprint        = {2602.14200},
+  archivePrefix = {arXiv},
+  note          = {arXiv preprint, v6 (June 2026). No venue in the paper body (W-1 verdict); the arXiv comment field states a workshop version at ICLR TSALM 2026 — not applied pending decision},
+}
+
+@inproceedings{reimers2019sbert,
+  author        = {Reimers, Nils and Gurevych, Iryna},
+  title         = {{Sentence-BERT}: Sentence Embeddings using Siamese {BERT}-Networks},
+  booktitle     = {Proceedings of EMNLP-IJCNLP 2019},
+  year          = {2019},
+  note          = {arXiv:1908.10084 — cite arXiv id alongside venue per W-1},
+}
+
+@inproceedings{ethayarajh2019contextual,
+  author        = {Ethayarajh, Kawin},
+  title         = {How Contextual are Contextualized Word Representations? Comparing the Geometry of {BERT}, {ELMo}, and {GPT-2} Embeddings},
+  booktitle     = {Proceedings of EMNLP-IJCNLP 2019},
+  year          = {2019},
+  note          = {arXiv:1909.00512 — cite arXiv id alongside venue per W-1; word-level; cite jointly with Reimers \& Gurevych},
+}

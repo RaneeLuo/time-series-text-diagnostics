@@ -1,0 +1,55 @@
+{
+  "n_c4_swap_items": 990,
+  "method_note": "keyword-based specificity; subtle-but-specific phrasings count as generic (conservative)",
+  "share_pinning": 0.8919191919191919,
+  "per_target_value": {
+    "negative spike": {
+      "share_pinning": 1.0,
+      "n": 165
+    },
+    "noisy": {
+      "share_pinning": 0.9333333333333333,
+      "n": 165
+    },
+    "positive spike": {
+      "share_pinning": 1.0,
+      "n": 165
+    },
+    "positive-and-negative spike": {
+      "share_pinning": 0.509090909090909,
+      "n": 165
+    },
+    "smooth": {
+      "share_pinning": 1.0,
+      "n": 165
+    },
+    "step": {
+      "share_pinning": 0.9090909090909091,
+      "n": 165
+    }
+  },
+  "clasp_acc_pinning_items": {
+    "acc": 0.5930539826349567,
+    "n": 883
+  },
+  "clasp_acc_generic_items": {
+    "acc": 0.6448598130841121,
+    "n": 107
+  },
+  "leakage_step_on_jumpy_shapes": {
+    "n": 22,
+    "of_step_targets": 165,
+    "acc_leakage": 0.5909090909090908,
+    "acc_other_step_targets": 0.4941724941724942
+  },
+  "corpus_vocab_exclusivity": {
+    "step_in_nonstep_jumpy_captions": [
+      0,
+      234
+    ],
+    "step_in_step_captions": [
+      402,
+      446
+    ]
+  }
+}

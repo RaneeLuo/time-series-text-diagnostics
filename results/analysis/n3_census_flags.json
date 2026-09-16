@@ -1,0 +1,1220 @@
+{
+  "population": 389,
+  "flagged": 389,
+  "by_rule": {
+    "R2": 389,
+    "R1": 23,
+    "R3": 16
+  },
+  "known_defects_captured": "14/14",
+  "certified_clean_overflagged": 83,
+  "census_rows_to_judge": 289,
+  "flags": {
+    "N3|671|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1482|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|794|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1679|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|758|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1927|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|395|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|224|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|907|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|998|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|197|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1184|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1688|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1441|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|29|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:temperatures and lower during warmer"
+    ],
+    "N3|367|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|484|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1433|swap": [
+      "R2:\\bindicat\\w+\\b;\\btransition\\w*\\s+from\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1990|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|505|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|195|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1315|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1520|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1634|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1388|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1632|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|743|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1794|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1896|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|313|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1199|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|275|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1272|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|220|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:temperatures increased"
+    ],
+    "N3|681|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|518|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1175|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1258|swap": [
+      "R2:\\bindicat\\w+\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|386|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|287|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|865|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1508|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1252|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|607|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1379|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|1015|swap": [
+      "R1:six_months_window",
+      "R2:\\bindicat\\w+\\b;\\btransition\\w*\\s+from\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1353|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|181|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|157|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|311|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|242|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1131|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|685|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1895|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1882|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1655|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|517|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|327|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1447|swap": [
+      "R1:six_months_window",
+      "R2:\\bindicat\\w+\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|1033|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1822|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|597|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|208|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|810|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1664|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1475|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1127|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1861|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1303|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|639|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1429|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1049|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|18|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|227|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1343|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|130|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|188|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1188|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1807|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1675|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1037|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1331|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1680|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1459|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|19|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|700|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1029|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1658|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:decreasing humidity towards the end of the period, particularly notable on days "
+    ],
+    "N3|575|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1058|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1174|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|375|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|389|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|479|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1947|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1076|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|429|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1052|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1438|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|504|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|288|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|205|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1507|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1596|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1136|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1606|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|913|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1730|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|115|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1826|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|164|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|174|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1108|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|903|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1872|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1661|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1770|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1701|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|355|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1411|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|637|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1565|swap": [
+      "R2:-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|1363|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|456|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|754|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|653|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|314|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1952|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|396|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1536|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:dropping to 22%, indicating a trend of increasing dryness as temperatures"
+    ],
+    "N3|300|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|87|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1150|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1943|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1332|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|784|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1024|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1719|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1341|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|482|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|194|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1865|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|384|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|886|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1899|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1027|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1095|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|378|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|701|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1123|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1234|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|576|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1126|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1977|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|128|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1014|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b",
+      "R3:dropping to as low as 34%, with a general trend of decreasing humidity as temper"
+    ],
+    "N3|1066|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1177|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|219|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1526|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1667|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1985|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1152|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1894|swap": [
+      "R2:\\bindicat\\w+\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|1881|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1793|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|49|swap": [
+      "R2:\\bindicat\\w+\\b;\\bpeak\\w*\\b"
+    ],
+    "N3|437|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1181|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1474|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1336|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1628|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|843|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|105|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|777|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1889|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1879|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|172|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1017|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1468|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|890|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1735|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|474|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1647|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1937|swap": [
+      "R2:\\bindicat\\w+\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|788|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|721|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|213|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1273|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1280|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|864|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|173|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1348|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1085|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|279|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|107|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1269|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1501|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|58|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1109|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|730|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|870|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|888|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|952|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:dropping to as low as 12%, with a general trend of decreasing humidity as temper"
+    ],
+    "N3|140|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1868|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1973|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|405|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1367|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|830|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1764|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|165|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|309|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1798|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|626|swap": [
+      "R2:\\bindicat\\w+\\b;\\bpeak\\w*\\b"
+    ],
+    "N3|932|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1364|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1231|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|290|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|312|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1455|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1878|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|376|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1008|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|22|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1847|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|240|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1133|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1144|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|703|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|999|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1323|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1426|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1892|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1200|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1976|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1351|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1414|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1075|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|624|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|895|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|807|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b",
+      "R3:decreasing humidity towards the end of the period, suggesting drier air as tempe"
+    ],
+    "N3|893|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|427|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|401|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b",
+      "R3:temperatures and lower humidity as temperatures increased"
+    ],
+    "N3|833|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1653|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|301|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1918|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1427|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1875|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|33|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1373|swap": [
+      "R1:six_months_window",
+      "R2:\\bindicat\\w+\\b;\\btransition\\w*\\s+from\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1705|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1399|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1603|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1201|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|880|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|304|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1054|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|448|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|985|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1261|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|281|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1274|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|345|swap": [
+      "R2:\\bindicat\\w+\\b;\\bsuggest\\w+\\b;\\bpeak\\w*\\b"
+    ],
+    "N3|1396|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1454|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|129|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|963|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|158|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1957|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1243|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1114|swap": [
+      "R2:\\bindicat\\w+\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|387|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1266|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|983|swap": [
+      "R2:\\bindicat\\w+\\b;\\bpeak\\w*\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|62|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|248|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1065|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1060|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|695|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|359|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|734|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1296|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1233|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|936|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1322|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1841|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:dropping to around 18%, with a general trend of decreasing humidity as temperatu"
+    ],
+    "N3|1853|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|245|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|310|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1554|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1700|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|968|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1320|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1829|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1883|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1748|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1809|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1391|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|210|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|127|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1524|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1093|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1525|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1519|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|2003|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|783|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|957|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1910|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1771|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|249|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1911|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|724|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1678|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|447|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1713|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1906|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1405|swap": [
+      "R2:\\bindicat\\w+\\b;\\bpeak\\w*\\b"
+    ],
+    "N3|338|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|145|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1913|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1818|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1141|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|418|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|192|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1046|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1768|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1385|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b",
+      "R3:dropping to a low of 24%, with a general trend of decreasing humidity as tempera"
+    ],
+    "N3|1425|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|729|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1390|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1020|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|370|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1695|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1577|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|419|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1644|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|305|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1377|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|617|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1815|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|237|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1922|swap": [
+      "R2:\\bindicat\\w+\\b;\\bpeak\\w*\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|590|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;-?\\d+(?:\\.\\d+)?\\s*\u00b0C.*?-?\\d+(?:\\.\\d+)?\\s*\u00b0C"
+    ],
+    "N3|1354|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1516|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|594|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1316|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1021|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1974|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|445|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1689|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1812|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1676|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1176|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|176|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|118|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|303|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1227|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1608|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|815|swap": [
+      "R1:six_months_window",
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|117|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1751|swap": [
+      "R1:six_months_window",
+      "R2:\\bindicat\\w+\\b;\\btransition\\w*\\s+from\\b;\\bpeak\\w*\\b"
+    ],
+    "N3|1161|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|1571|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b",
+      "R3:decreasing humidity as temperatures"
+    ],
+    "N3|1840|swap": [
+      "R1:six_months_window",
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|95|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1372|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|917|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1010|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1767|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|203|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|463|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|123|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1068|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|761|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|198|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|855|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1583|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1345|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1725|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|184|swap": [
+      "R2:\\bindicat\\w+\\b;\\btransition\\w*\\s+from\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|73|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1625|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|1071|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ],
+    "N3|832|swap": [
+      "R2:\\bindicat\\w+\\b;\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b"
+    ],
+    "N3|1043|swap": [
+      "R2:\\bfrom\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bto\\s+(?:a\\s+)?(?:high|low)s?\\b;\\bhigh\\s+of\\b"
+    ]
+  }
+}

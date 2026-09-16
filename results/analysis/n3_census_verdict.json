@@ -1,0 +1,56 @@
+{
+  "excised": 45,
+  "per_seed": {
+    "mask13": {
+      "acc_swap": 0.7034883720930233,
+      "acc_random": 1.0,
+      "gap": 0.2965116279069767,
+      "delta_swap_vs_committed": -0.016305972379984435,
+      "n_swap": 344,
+      "n_random": 344
+    },
+    "mask14": {
+      "acc_swap": 0.7122093023255814,
+      "acc_random": 0.9941860465116279,
+      "gap": 0.28197674418604646,
+      "delta_swap_vs_committed": -0.010155736234829904,
+      "n_swap": 344,
+      "n_random": 344
+    },
+    "mask15": {
+      "acc_swap": 0.7093023255813954,
+      "acc_random": 0.997093023255814,
+      "gap": 0.28779069767441856,
+      "delta_swap_vs_committed": -0.01563340706641947,
+      "n_swap": 344,
+      "n_random": 344
+    }
+  },
+  "gradient": {
+    "week": {
+      "acc": 0.6185185185185185,
+      "n_items": 90
+    },
+    "28_days": {
+      "acc": 0.7360544217687075,
+      "n_items": 245
+    },
+    "six_months": {
+      "acc": 0.8518518518518519,
+      "n_items": 9
+    }
+  },
+  "predictions": {
+    "P-cen1": {
+      "confirmed": true,
+      "census_n": 28
+    },
+    "P-cen2": {
+      "confirmed": false,
+      "six_months": "9/17"
+    },
+    "P-cen3": {
+      "confirmed": true
+    }
+  }
+}

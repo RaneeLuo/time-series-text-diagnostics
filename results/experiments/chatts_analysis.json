@@ -1,0 +1,1495 @@
+{
+ "conventions": {
+  "metric": "MCQ accuracy, both orders averaged per unit (0/0.5/1)",
+  "bootstrap": "cluster on sample_id (signals), B=2000, seed 42",
+  "ci": "95% cells/differences; 90% for TOST",
+  "tost": "+/-0.05 accuracy \u2014 NEW APPLICATION of the pinned MRR margin",
+  "void_rule": "95% CI lower bound of the no-perturbation/random cell < 0.6"
+ },
+ "pj_control": {
+  "cells": {
+   "sushi": {
+    "mean_diff": -0.005,
+    "ci95": [
+     -0.015,
+     0.0
+    ],
+    "ci90": [
+     -0.015,
+     0.0
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 100,
+    "n_signals": 100,
+    "n_captions": 100
+   },
+   "truce": {
+    "mean_diff": 0.0,
+    "ci95": [
+     -0.03,
+     0.026
+    ],
+    "ci90": [
+     -0.0248,
+     0.0211
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 100,
+    "n_signals": 88,
+    "n_captions": 100
+   }
+  },
+  "truce_masking_stamp": "OK",
+  "note": "PJ is LOAD-BEARING for TRUCE masking (binding)"
+ },
+ "viability": {
+  "sushi_random": {
+   "acc": 0.7258,
+   "ci95": [
+    0.6949,
+    0.7551
+   ],
+   "n_units": 2770,
+   "n_signals": 279
+  },
+  "sushi_void": false,
+  "pc1_1_sushi": "MISS",
+  "truce_unperturbed": {
+   "acc": 0.622,
+   "ci95": [
+    0.5908,
+    0.6538
+   ],
+   "n_units": 738,
+   "n_signals": 246
+  },
+  "truce_void": true
+ },
+ "position": {
+  "per_probe": {
+   "1": {
+    "p_choose_A": 0.556,
+    "mean_abs_logit_margin": 4.877
+   },
+   "2": {
+    "p_choose_A": 0.3982,
+    "mean_abs_logit_margin": 4.184
+   },
+   "3": {
+    "p_choose_A": 0.3629,
+    "mean_abs_logit_margin": 3.786
+   }
+  },
+  "pooled_p_A": 0.4416,
+  "pc1_2": "HIT"
+ },
+ "pc1_3_agreement": {
+  "value": "600/600, 0 unparseable",
+  "source": "session logs (GR8), not recomputed here",
+  "verdict": "HIT (logit readout primary in all probes)"
+ },
+ "probe1": {
+  "components": {
+   "C1": {
+    "swap": {
+     "acc": 0.8146,
+     "ci95": [
+      0.7683,
+      0.8561
+     ],
+     "n_units": 205,
+     "n_signals": 205
+    },
+    "random": {
+     "acc": 0.778,
+     "ci95": [
+      0.7244,
+      0.8268
+     ],
+     "n_units": 205,
+     "n_signals": 205
+    },
+    "gap_random_minus_swap": {
+     "mean_diff": -0.0366,
+     "ci95": [
+      -0.1,
+      0.022
+     ],
+     "ci90": [
+      -0.0878,
+      0.0122
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 205,
+     "n_signals": 205
+    },
+    "wilcoxon_p": 0.21311,
+    "mcnemar_secondary": {
+     "n01_rand_only": 31,
+     "n10_swap_only": 37,
+     "p": 0.544612
+    },
+    "verdict_void": false,
+    "n_items": 205,
+    "wilcoxon_p_holm": 0.561295
+   },
+   "C2": {
+    "swap": {
+     "acc": 0.5268,
+     "ci95": [
+      0.4711,
+      0.5755
+     ],
+     "n_units": 410,
+     "n_signals": 177
+    },
+    "random": {
+     "acc": 0.8524,
+     "ci95": [
+      0.8205,
+      0.8831
+     ],
+     "n_units": 410,
+     "n_signals": 177
+    },
+    "gap_random_minus_swap": {
+     "mean_diff": 0.3256,
+     "ci95": [
+      0.2752,
+      0.3799
+     ],
+     "ci90": [
+      0.2821,
+      0.3698
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 410,
+     "n_signals": 177
+    },
+    "wilcoxon_p": 0.0,
+    "mcnemar_secondary": {
+     "n01_rand_only": 179,
+     "n10_swap_only": 22,
+     "p": 0.0
+    },
+    "verdict_void": false,
+    "n_items": 410,
+    "wilcoxon_p_holm": 0.0
+   },
+   "C3": {
+    "swap": {
+     "acc": 0.6125,
+     "ci95": [
+      0.5482,
+      0.6732
+     ],
+     "n_units": 280,
+     "n_signals": 70
+    },
+    "random": {
+     "acc": 0.5696,
+     "ci95": [
+      0.5018,
+      0.6375
+     ],
+     "n_units": 280,
+     "n_signals": 70
+    },
+    "gap_random_minus_swap": {
+     "mean_diff": -0.0429,
+     "ci95": [
+      -0.125,
+      0.0375
+     ],
+     "ci90": [
+      -0.1143,
+      0.0268
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 280,
+     "n_signals": 70
+    },
+    "wilcoxon_p": 0.187098,
+    "mcnemar_secondary": {
+     "n01_rand_only": 60,
+     "n10_swap_only": 70,
+     "p": 0.430021
+    },
+    "verdict_void": true,
+    "n_items": 280,
+    "wilcoxon_p_holm": 0.561295
+   },
+   "C4": {
+    "swap": {
+     "acc": 0.6576,
+     "ci95": [
+      0.6228,
+      0.6929
+     ],
+     "n_units": 990,
+     "n_signals": 240
+    },
+    "random": {
+     "acc": 0.7545,
+     "ci95": [
+      0.7203,
+      0.7868
+     ],
+     "n_units": 990,
+     "n_signals": 240
+    },
+    "gap_random_minus_swap": {
+     "mean_diff": 0.097,
+     "ci95": [
+      0.0591,
+      0.1372
+     ],
+     "ci90": [
+      0.0672,
+      0.1295
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 990,
+     "n_signals": 240
+    },
+    "wilcoxon_p": 0.0,
+    "mcnemar_secondary": {
+     "n01_rand_only": 287,
+     "n10_swap_only": 144,
+     "p": 0.0
+    },
+    "verdict_void": false,
+    "n_items": 990,
+    "wilcoxon_p_holm": 0.0
+   },
+   "C5": {
+    "swap": {
+     "acc": 0.687,
+     "ci95": [
+      0.6374,
+      0.7399
+     ],
+     "n_units": 885,
+     "n_signals": 248
+    },
+    "random": {
+     "acc": 0.6723,
+     "ci95": [
+      0.6243,
+      0.7181
+     ],
+     "n_units": 885,
+     "n_signals": 248
+    },
+    "gap_random_minus_swap": {
+     "mean_diff": -0.0147,
+     "ci95": [
+      -0.0556,
+      0.0236
+     ],
+     "ci90": [
+      -0.0465,
+      0.0188
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 885,
+     "n_signals": 248
+    },
+    "wilcoxon_p": 0.342376,
+    "mcnemar_secondary": {
+     "n01_rand_only": 130,
+     "n10_swap_only": 151,
+     "p": 0.232772
+    },
+    "verdict_void": false,
+    "n_items": 885,
+    "wilcoxon_p_holm": 0.561295
+   }
+  },
+  "order_flip_rate": {
+   "swap": 0.2819,
+   "random": 0.2343
+  },
+  "non_prediction_note": "C4/ordering = open question, answered here"
+ },
+ "probe2": {
+  "cells": {
+   "sushi|dependent|unperturbed": {
+    "acc": 0.7333,
+    "ci95": [
+     0.6704,
+     0.7963
+    ],
+    "n_units": 135,
+    "n_signals": 135
+   },
+   "sushi|dependent|sf_all": {
+    "acc": 0.4667,
+    "ci95": [
+     0.3963,
+     0.537
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.2667,
+     "ci95": [
+      -0.3481,
+      -0.1815
+     ],
+     "ci90": [
+      -0.337,
+      -0.1963
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|dependent|sf_half": {
+    "acc": 0.6222,
+    "ci95": [
+     0.5518,
+     0.6926
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.1111,
+     "ci95": [
+      -0.1704,
+      -0.0519
+     ],
+     "ci90": [
+      -0.163,
+      -0.0593
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|dependent|ex_half": {
+    "acc": 0.6259,
+    "ci95": [
+     0.5556,
+     0.6926
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.1074,
+     "ci95": [
+      -0.1556,
+      -0.0556
+     ],
+     "ci90": [
+      -0.1519,
+      -0.063
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|dependent|masking": {
+    "acc": 0.6148,
+    "ci95": [
+     0.5519,
+     0.6852
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.1185,
+     "ci95": [
+      -0.1815,
+      -0.0556
+     ],
+     "ci90": [
+      -0.1741,
+      -0.0704
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|dependent|sf_within_patch": {
+    "acc": 0.7148,
+    "ci95": [
+     0.6481,
+     0.7815
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.0185,
+     "ci95": [
+      -0.0556,
+      0.0185
+     ],
+     "ci90": [
+      -0.0481,
+      0.0111
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|dependent|sf_across_patch": {
+    "acc": 0.5148,
+    "ci95": [
+     0.4444,
+     0.5852
+    ],
+    "n_units": 135,
+    "n_signals": 135,
+    "drop_vs_unpert": {
+     "mean_diff": -0.2185,
+     "ci95": [
+      -0.2963,
+      -0.1406
+     ],
+     "ci90": [
+      -0.2852,
+      -0.1519
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 135,
+     "n_signals": 135
+    }
+   },
+   "sushi|invariant|unperturbed": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|sf_all": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|sf_half": {
+    "acc": 0.875,
+    "ci95": [
+     0.625,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": -0.125,
+     "ci95": [
+      -0.375,
+      0.0
+     ],
+     "ci90": [
+      -0.25,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|ex_half": {
+    "acc": 0.75,
+    "ci95": [
+     0.5,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": -0.25,
+     "ci95": [
+      -0.5,
+      0.0
+     ],
+     "ci90": [
+      -0.5,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|masking": {
+    "acc": 0.875,
+    "ci95": [
+     0.625,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": -0.125,
+     "ci95": [
+      -0.375,
+      0.0
+     ],
+     "ci90": [
+      -0.25,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|sf_within_patch": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|invariant|sf_across_patch": {
+    "acc": 0.875,
+    "ci95": [
+     0.625,
+     1.0
+    ],
+    "n_units": 4,
+    "n_signals": 4,
+    "drop_vs_unpert": {
+     "mean_diff": -0.125,
+     "ci95": [
+      -0.375,
+      0.0
+     ],
+     "ci90": [
+      -0.25,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 4,
+     "n_signals": 4
+    },
+    "thin_cell": "n=4 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|unperturbed": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|sf_all": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|sf_half": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|ex_half": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|masking": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|sf_within_patch": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "sushi|degenerate|sf_across_patch": {
+    "acc": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_units": 1,
+    "n_signals": 1,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 1,
+     "n_signals": 1
+    },
+    "thin_cell": "n=1 captions \u2014 never load-bearing alone"
+   },
+   "truce|dependent|unperturbed": {
+    "acc": 0.6238,
+    "ci95": [
+     0.5932,
+     0.6554
+    ],
+    "n_units": 715,
+    "n_signals": 245
+   },
+   "truce|dependent|sf_all": {
+    "acc": 0.5112,
+    "ci95": [
+     0.4813,
+     0.5407
+    ],
+    "n_units": 715,
+    "n_signals": 245,
+    "drop_vs_unpert": {
+     "mean_diff": -0.1126,
+     "ci95": [
+      -0.1489,
+      -0.0754
+     ],
+     "ci90": [
+      -0.1443,
+      -0.0815
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 715,
+     "n_signals": 245
+    }
+   },
+   "truce|dependent|sf_half": {
+    "acc": 0.5874,
+    "ci95": [
+     0.5556,
+     0.6157
+    ],
+    "n_units": 715,
+    "n_signals": 245,
+    "drop_vs_unpert": {
+     "mean_diff": -0.0364,
+     "ci95": [
+      -0.0625,
+      -0.0099
+     ],
+     "ci90": [
+      -0.0584,
+      -0.0147
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 715,
+     "n_signals": 245
+    }
+   },
+   "truce|dependent|ex_half": {
+    "acc": 0.4497,
+    "ci95": [
+     0.4168,
+     0.4819
+    ],
+    "n_units": 715,
+    "n_signals": 245,
+    "drop_vs_unpert": {
+     "mean_diff": -0.1741,
+     "ci95": [
+      -0.2151,
+      -0.1354
+     ],
+     "ci90": [
+      -0.2072,
+      -0.1413
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 715,
+     "n_signals": 245
+    }
+   },
+   "truce|dependent|masking": {
+    "acc": 0.6056,
+    "ci95": [
+     0.5737,
+     0.6366
+    ],
+    "n_units": 715,
+    "n_signals": 245,
+    "drop_vs_unpert": {
+     "mean_diff": -0.0182,
+     "ci95": [
+      -0.0377,
+      0.0007
+     ],
+     "ci90": [
+      -0.0345,
+      -0.0027
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 715,
+     "n_signals": 245
+    },
+    "status": "OK"
+   },
+   "truce|invariant|unperturbed": {
+    "acc": 0.5278,
+    "ci95": [
+     0.3333,
+     0.7222
+    ],
+    "n_units": 18,
+    "n_signals": 14,
+    "thin_cell": "n=18 captions \u2014 never load-bearing alone"
+   },
+   "truce|invariant|sf_all": {
+    "acc": 0.75,
+    "ci95": [
+     0.5294,
+     0.9286
+    ],
+    "n_units": 18,
+    "n_signals": 14,
+    "drop_vs_unpert": {
+     "mean_diff": 0.2222,
+     "ci95": [
+      0.0526,
+      0.4287
+     ],
+     "ci90": [
+      0.0714,
+      0.3889
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 18,
+     "n_signals": 14
+    },
+    "thin_cell": "n=18 captions \u2014 never load-bearing alone"
+   },
+   "truce|invariant|sf_half": {
+    "acc": 0.6667,
+    "ci95": [
+     0.5,
+     0.8333
+    ],
+    "n_units": 18,
+    "n_signals": 14,
+    "drop_vs_unpert": {
+     "mean_diff": 0.1389,
+     "ci95": [
+      0.0,
+      0.2941
+     ],
+     "ci90": [
+      0.0238,
+      0.2632
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 18,
+     "n_signals": 14
+    },
+    "thin_cell": "n=18 captions \u2014 never load-bearing alone"
+   },
+   "truce|invariant|ex_half": {
+    "acc": 0.5833,
+    "ci95": [
+     0.3529,
+     0.7943
+    ],
+    "n_units": 18,
+    "n_signals": 14,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0556,
+     "ci95": [
+      -0.1579,
+      0.2812
+     ],
+     "ci90": [
+      -0.1253,
+      0.2368
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 18,
+     "n_signals": 14
+    },
+    "thin_cell": "n=18 captions \u2014 never load-bearing alone"
+   },
+   "truce|invariant|masking": {
+    "acc": 0.5556,
+    "ci95": [
+     0.375,
+     0.7188
+    ],
+    "n_units": 18,
+    "n_signals": 14,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0278,
+     "ci95": [
+      -0.0882,
+      0.1579
+     ],
+     "ci90": [
+      -0.0789,
+      0.1335
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 18,
+     "n_signals": 14
+    },
+    "status": "OK",
+    "thin_cell": "n=18 captions \u2014 never load-bearing alone"
+   },
+   "truce|ambiguous|unperturbed": {
+    "acc": 0.7,
+    "ci95": [
+     0.3,
+     1.0
+    ],
+    "n_units": 5,
+    "n_signals": 5,
+    "thin_cell": "n=5 captions \u2014 never load-bearing alone"
+   },
+   "truce|ambiguous|sf_all": {
+    "acc": 0.4,
+    "ci95": [
+     0.1,
+     0.7
+    ],
+    "n_units": 5,
+    "n_signals": 5,
+    "drop_vs_unpert": {
+     "mean_diff": -0.3,
+     "ci95": [
+      -0.7,
+      0.0
+     ],
+     "ci90": [
+      -0.6,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 5,
+     "n_signals": 5
+    },
+    "thin_cell": "n=5 captions \u2014 never load-bearing alone"
+   },
+   "truce|ambiguous|sf_half": {
+    "acc": 0.5,
+    "ci95": [
+     0.1,
+     0.9
+    ],
+    "n_units": 5,
+    "n_signals": 5,
+    "drop_vs_unpert": {
+     "mean_diff": -0.2,
+     "ci95": [
+      -0.6,
+      0.0
+     ],
+     "ci90": [
+      -0.6,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 5,
+     "n_signals": 5
+    },
+    "thin_cell": "n=5 captions \u2014 never load-bearing alone"
+   },
+   "truce|ambiguous|ex_half": {
+    "acc": 0.5,
+    "ci95": [
+     0.2,
+     0.8
+    ],
+    "n_units": 5,
+    "n_signals": 5,
+    "drop_vs_unpert": {
+     "mean_diff": -0.2,
+     "ci95": [
+      -0.4,
+      0.0
+     ],
+     "ci90": [
+      -0.4,
+      0.0
+     ],
+     "tost_pm005": "FAIL(not flat)",
+     "n_units": 5,
+     "n_signals": 5
+    },
+    "thin_cell": "n=5 captions \u2014 never load-bearing alone"
+   },
+   "truce|ambiguous|masking": {
+    "acc": 0.7,
+    "ci95": [
+     0.3,
+     1.0
+    ],
+    "n_units": 5,
+    "n_signals": 5,
+    "drop_vs_unpert": {
+     "mean_diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "ci90": [
+      0.0,
+      0.0
+     ],
+     "tost_pm005": "PASS(flat)",
+     "n_units": 5,
+     "n_signals": 5
+    },
+    "status": "OK",
+    "thin_cell": "n=5 captions \u2014 never load-bearing alone"
+   }
+  },
+  "did": {
+   "truce|sf_all": {
+    "did_invdrop_minus_depdrop": 0.3348,
+    "ci95": [
+     0.1428,
+     0.5503
+    ],
+    "n_dep": 715,
+    "n_inv": 18,
+    "load_bearing": true,
+    "note": "thin invariant leg \u2014 quote with its n"
+   },
+   "truce|sf_half": {
+    "did_invdrop_minus_depdrop": 0.1753,
+    "ci95": [
+     0.0266,
+     0.3528
+    ],
+    "n_dep": 715,
+    "n_inv": 18,
+    "load_bearing": true,
+    "note": "thin invariant leg \u2014 quote with its n"
+   },
+   "truce|ex_half": {
+    "did_invdrop_minus_depdrop": 0.2297,
+    "ci95": [
+     0.0015,
+     0.478
+    ],
+    "n_dep": 715,
+    "n_inv": 18,
+    "load_bearing": true,
+    "note": "thin invariant leg \u2014 quote with its n"
+   },
+   "truce|masking": {
+    "did_invdrop_minus_depdrop": 0.046,
+    "ci95": [
+     -0.0826,
+     0.1725
+    ],
+    "n_dep": 715,
+    "n_inv": 18,
+    "load_bearing": false,
+    "note": "thin invariant leg \u2014 quote with its n",
+    "status": "OK"
+   },
+   "sushi|sf_all": {
+    "did_invdrop_minus_depdrop": 0.2667,
+    "ci95": [
+     0.1856,
+     0.3514
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   },
+   "sushi|sf_half": {
+    "did_invdrop_minus_depdrop": -0.0139,
+    "ci95": [
+     -0.3544,
+     0.1544
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   },
+   "sushi|ex_half": {
+    "did_invdrop_minus_depdrop": -0.1426,
+    "ci95": [
+     -0.4094,
+     0.1306
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   },
+   "sushi|masking": {
+    "did_invdrop_minus_depdrop": -0.0065,
+    "ci95": [
+     -0.3477,
+     0.1654
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   },
+   "sushi|sf_within_patch": {
+    "did_invdrop_minus_depdrop": 0.0185,
+    "ci95": [
+     -0.0184,
+     0.0556
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   },
+   "sushi|sf_across_patch": {
+    "did_invdrop_minus_depdrop": 0.0935,
+    "ci95": [
+     -0.2336,
+     0.2794
+    ],
+    "n_dep": 135,
+    "n_inv": 4,
+    "load_bearing": false,
+    "note": "descriptive only (invariant n=4)"
+   }
+  },
+  "degenerate_identity": {
+   "sushi:clean\\00\\0000009#0|corrA": {
+    "letters": {
+     "unperturbed": "A",
+     "sf_all": "A",
+     "sf_half": "A",
+     "ex_half": "A",
+     "masking": "A",
+     "sf_within_patch": "A",
+     "sf_across_patch": "A"
+    },
+    "consistent": true
+   },
+   "sushi:clean\\00\\0000009#0|corrB": {
+    "letters": {
+     "unperturbed": "B",
+     "sf_all": "B",
+     "sf_half": "B",
+     "ex_half": "B",
+     "masking": "B",
+     "sf_within_patch": "B",
+     "sf_across_patch": "B"
+    },
+    "consistent": true
+   }
+  },
+  "pooled_warning": "strata always; any pooled number is non-load-bearing"
+ },
+ "probe3": {
+  "cells_and_anchors": {
+   "sushi|rung1_unperturbed": {
+    "acc": 0.7429,
+    "ci95": [
+     0.6821,
+     0.8071
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|rung2_sf_all": {
+    "acc": 0.4857,
+    "ci95": [
+     0.4179,
+     0.5571
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|five_number": {
+    "acc": 0.4821,
+    "ci95": [
+     0.4214,
+     0.5464
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|resample": {
+    "acc": 0.4714,
+    "ci95": [
+     0.4036,
+     0.5394
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|gaussian": {
+    "acc": 0.4643,
+    "ci95": [
+     0.3929,
+     0.5357
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|cond_A": {
+    "acc": 0.4679,
+    "ci95": [
+     0.3964,
+     0.5357
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|cond_B": {
+    "acc": 0.7393,
+    "ci95": [
+     0.6786,
+     0.8
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|cond_C": {
+    "acc": 0.4643,
+    "ci95": [
+     0.3929,
+     0.5286
+    ],
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|anchor_C_vs_gaussian": {
+    "mean_diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 140,
+    "n_signals": 140,
+    "letter_agreement": 1.0
+   },
+   "sushi|A_vs_C_nearconstruction": {
+    "mean_diff": 0.0036,
+    "ci95": [
+     -0.0107,
+     0.0214
+    ],
+    "ci90": [
+     -0.0071,
+     0.0179
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 140,
+    "n_signals": 140,
+    "letter_agreement": 0.9821
+   },
+   "sushi|B_vs_rung1_prefixchannel": {
+    "mean_diff": -0.0036,
+    "ci95": [
+     -0.0286,
+     0.0179
+    ],
+    "ci90": [
+     -0.0216,
+     0.0143
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "sushi|fivenum_vs_rung1": {
+    "mean_diff": -0.2607,
+    "ci95": [
+     -0.3429,
+     -0.1857
+    ],
+    "ci90": [
+     -0.325,
+     -0.2036
+    ],
+    "tost_pm005": "FAIL(not flat)",
+    "n_units": 140,
+    "n_signals": 140
+   },
+   "truce|rung1_unperturbed": {
+    "acc": 0.622,
+    "ci95": [
+     0.5901,
+     0.6531
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|rung2_sf_all": {
+    "acc": 0.5163,
+    "ci95": [
+     0.4885,
+     0.5454
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|five_number": {
+    "acc": 0.519,
+    "ci95": [
+     0.4919,
+     0.5461
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|resample": {
+    "acc": 0.5115,
+    "ci95": [
+     0.481,
+     0.5413
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|gaussian": {
+    "acc": 0.5007,
+    "ci95": [
+     0.4688,
+     0.5332
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|cond_A": {
+    "acc": 0.4973,
+    "ci95": [
+     0.4641,
+     0.5285
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|cond_B": {
+    "acc": 0.6159,
+    "ci95": [
+     0.5854,
+     0.6484
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|cond_C": {
+    "acc": 0.5007,
+    "ci95": [
+     0.4695,
+     0.5325
+    ],
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|anchor_C_vs_gaussian": {
+    "mean_diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "ci90": [
+     0.0,
+     0.0
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 738,
+    "n_signals": 246,
+    "letter_agreement": 1.0
+   },
+   "truce|A_vs_C_nearconstruction": {
+    "mean_diff": -0.0034,
+    "ci95": [
+     -0.0122,
+     0.0054
+    ],
+    "ci90": [
+     -0.0102,
+     0.0034
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 738,
+    "n_signals": 246,
+    "letter_agreement": 0.9736
+   },
+   "truce|B_vs_rung1_prefixchannel": {
+    "mean_diff": -0.0061,
+    "ci95": [
+     -0.0169,
+     0.0047
+    ],
+    "ci90": [
+     -0.0149,
+     0.0027
+    ],
+    "tost_pm005": "PASS(flat)",
+    "n_units": 738,
+    "n_signals": 246
+   },
+   "truce|fivenum_vs_rung1": {
+    "mean_diff": -0.103,
+    "ci95": [
+     -0.1423,
+     -0.0664
+    ],
+    "ci90": [
+     -0.1342,
+     -0.0718
+    ],
+    "tost_pm005": "FAIL(not flat)",
+    "n_units": 738,
+    "n_signals": 246
+   }
+  },
+  "note": "rungs 1-2 read from ChatTS Probe-2 responses (GA9-JG)"
+ }
+}

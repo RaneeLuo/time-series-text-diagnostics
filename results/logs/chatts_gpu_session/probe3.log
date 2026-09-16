@@ -1,0 +1,44 @@
+=== ChatTS GPU runner ===
+torch 2.4.1+cu121; cuda available: True
+[GR-cuda] PASS — CUDA device present
+[GR0-weights] PASS — weight bytes = 29,750,198,302 (expected 29,750,198,302; 6 shards)
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.03s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:03,  1.13it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:02<00:02,  1.21it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:04<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:04<00:00,  1.20it/s]
+[GR3-letters] PASS — letter candidate token ids: {'A': [32, 362], 'B': [33, 425]} (each side needs >=1 single-token id)
+[GR2-chatts_probe1_mcq] PASS — rows = 11080 (expected 11080)
+[GR1-chatts_probe1_mcq] PASS — template-sha mismatches: 0 (expected 0)
+[GR2-chatts_probe2_mcq] PASS — rows = 1756 (expected 1756)
+[GR1-chatts_probe2_mcq] PASS — template-sha mismatches: 0 (expected 0)
+[GR2-chatts_probe3_mcq] PASS — rows = 3912 (expected 3912)
+[GR1-chatts_probe3_mcq] PASS — template-sha mismatches: 0 (expected 0)
+  [500] 23.2 q/s
+  [1000] 23.4 q/s
+  [1500] 23.5 q/s
+  [2000] 23.5 q/s
+  [2500] 23.6 q/s
+  [3000] 23.6 q/s
+  [3500] 23.6 q/s
+  [4000] 23.6 q/s
+  [4500] 23.6 q/s
+  [5000] 23.6 q/s
+  [5500] 23.7 q/s
+  [6000] 23.7 q/s
+  [6500] 23.7 q/s
+  [7000] 23.7 q/s
+  [7500] 23.5 q/s
+  [8000] 22.9 q/s
+  [8500] 22.3 q/s
+  [9000] 22.1 q/s
+  [9500] 22.2 q/s
+  [10000] 22.3 q/s
+  [10500] 22.4 q/s
+[probe 3] wrote 10936 new responses in 8.2 min -> results/experiments/chatts_probe3_responses.jsonl
+/venv/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/venv/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/venv/lib/python3.12/site-packages/transformers/generation/configuration_utils.py:612: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+`get_max_cache()` is deprecated for all Cache classes. Use `get_max_cache_shape()` instead. Calling `get_max_cache()` will raise error from v4.48
+[GR8-agreement-p3] PASS — logit-vs-greedy agreement 200/200 = 1.000 (threshold 0.95; unparseable 0; pre-named fallback: generation becomes primary for this probe)
+Done. Verify gate lines above before leaving the pod.

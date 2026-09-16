@@ -1,0 +1,24 @@
+{
+  "items_in": 5540,
+  "rows_out": 11080,
+  "unique_signals": 279,
+  "splits": {
+    "val": 2748,
+    "test": 2792
+  },
+  "per_component_condition": {
+    "C1_trend_direction|random": 205,
+    "C1_trend_direction|swap": 205,
+    "C2_trend_family|random": 410,
+    "C2_trend_family|swap": 410,
+    "C3_periodic_waveform|random": 280,
+    "C3_periodic_waveform|swap": 280,
+    "C4_fluctuation_type|random": 990,
+    "C4_fluctuation_type|swap": 990,
+    "C5_signal_regime|random": 885,
+    "C5_signal_regime|swap": 885
+  },
+  "template_sha": "4029f94e2f6d",
+  "template_full": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHere is a time series: <ts><ts/>.\nWhich description matches this time series?\n(A) {option_a}\n(B) {option_b}\nAnswer with exactly one letter, A or B.<|im_end|>\n<|im_start|>assistant\n",
+  "non_ascii": {}
+}

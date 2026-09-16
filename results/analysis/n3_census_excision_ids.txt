@@ -1,0 +1,50 @@
+# N3 census excision list, 2026-08 — 45 human-judged defective
+# swap items: 17 from the 100-item sample (union of n's, strict-
+# call rule) + 28 from the 289-item census. Each excises with its
+# matched random twin (same pair_key). Verdict sheets:
+# n3_validation_sheet{,_variant}.csv + filled n3_census_sheet.csv
+N3|1014|swap  # census
+N3|1015|swap  # census
+N3|1075|swap  # census
+N3|1076|swap  # census
+N3|1085|swap  # sample
+N3|1188|swap  # sample
+N3|1274|swap  # census
+N3|1303|swap  # sample
+N3|1353|swap  # census
+N3|1367|swap  # census
+N3|1373|swap  # census
+N3|1379|swap  # census
+N3|1385|swap  # census
+N3|1411|swap  # census
+N3|1433|swap  # sample
+N3|1536|swap  # census
+N3|1571|swap  # census
+N3|1577|swap  # sample
+N3|1608|swap  # sample
+N3|1632|swap  # sample
+N3|165|swap  # census
+N3|1751|swap  # sample
+N3|1764|swap  # sample
+N3|1815|swap  # census
+N3|1840|swap  # census
+N3|1841|swap  # census
+N3|184|swap  # census
+N3|1872|swap  # census
+N3|1894|swap  # census
+N3|195|swap  # census
+N3|220|swap  # sample
+N3|279|swap  # sample
+N3|313|swap  # census
+N3|345|swap  # sample
+N3|576|swap  # sample
+N3|590|swap  # census
+N3|626|swap  # sample
+N3|721|swap  # sample
+N3|807|swap  # census
+N3|815|swap  # census
+N3|830|swap  # census
+N3|864|swap  # sample
+N3|870|swap  # census
+N3|936|swap  # sample
+N3|952|swap  # census

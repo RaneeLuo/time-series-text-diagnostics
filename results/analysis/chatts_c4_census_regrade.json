@@ -1,0 +1,328 @@
+{
+  "generated": "2026-09-05",
+  "script": "scripts/regrade_chatts_c4_census.py",
+  "method": "re-grade of stored ChatTS per-item answers; no rerun",
+  "conventions": {
+    "unit": "mean of both answer orders (0/0.5/1)",
+    "bootstrap": "cluster on sample_id, B=2000, seed 42",
+    "tost": "\u00b10.05 on the 90% CI of random\u2212swap"
+  },
+  "reproduction_gate": {
+    "full_990": {
+      "swap": {
+        "acc": 0.6576,
+        "ci95": [
+          0.623,
+          0.6927
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "random": {
+        "acc": 0.7545,
+        "ci95": [
+          0.722,
+          0.7857
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "gap": {
+        "mean_diff": 0.097,
+        "ci95": [
+          0.0616,
+          0.1342
+        ],
+        "ci90": [
+          0.0643,
+          0.1282
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 990,
+        "n_signals": 240
+      }
+    },
+    "recorded": {
+      "swap": {
+        "acc": 0.6576,
+        "ci95": [
+          0.6228,
+          0.6929
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "random": {
+        "acc": 0.7545,
+        "ci95": [
+          0.7203,
+          0.7868
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.097,
+        "ci95": [
+          0.0591,
+          0.1372
+        ],
+        "ci90": [
+          0.0672,
+          0.1295
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "wilcoxon_p": 0.0,
+      "mcnemar_secondary": {
+        "n01_rand_only": 287,
+        "n10_swap_only": 144,
+        "p": 0.0
+      },
+      "verdict_void": false,
+      "n_items": 990,
+      "wilcoxon_p_holm": 0.0
+    },
+    "ci_max_abs_dev": 0.003
+  },
+  "partitions": {
+    "census_valid": {
+      "label": "census_valid",
+      "n_items": 738,
+      "swap": {
+        "acc": 0.6897,
+        "ci95": [
+          0.6526,
+          0.7267
+        ],
+        "n_units": 738,
+        "n_signals": 237
+      },
+      "random": {
+        "acc": 0.7642,
+        "ci95": [
+          0.7286,
+          0.7964
+        ],
+        "n_units": 738,
+        "n_signals": 237
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.0745,
+        "ci95": [
+          0.0338,
+          0.1162
+        ],
+        "ci90": [
+          0.0407,
+          0.1084
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 738,
+        "n_signals": 237
+      },
+      "wilcoxon_p": 2.209839590484235e-05,
+      "mcnemar_secondary": {
+        "n01_rand_only": 205,
+        "n10_swap_only": 112,
+        "p": 0.0
+      },
+      "order_flip_rate": {
+        "swap": 0.3198,
+        "random": 0.2168
+      }
+    },
+    "census_invalid": {
+      "label": "census_invalid",
+      "n_items": 125,
+      "swap": {
+        "acc": 0.636,
+        "ci95": [
+          0.5649,
+          0.7049
+        ],
+        "n_units": 125,
+        "n_signals": 79
+      },
+      "random": {
+        "acc": 0.724,
+        "ci95": [
+          0.6471,
+          0.7951
+        ],
+        "n_units": 125,
+        "n_signals": 79
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.088,
+        "ci95": [
+          -0.0038,
+          0.1826
+        ],
+        "ci90": [
+          0.0165,
+          0.1617
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 125,
+        "n_signals": 79
+      },
+      "wilcoxon_p": 0.04168683469071607,
+      "mcnemar_secondary": {
+        "n01_rand_only": 36,
+        "n10_swap_only": 19,
+        "p": 0.030029
+      },
+      "order_flip_rate": {
+        "swap": 0.36,
+        "random": 0.264
+      }
+    },
+    "cross_slot": {
+      "label": "cross_slot",
+      "n_items": 20,
+      "swap": {
+        "acc": 0.175,
+        "ci95": [
+          0.05,
+          0.325
+        ],
+        "n_units": 20,
+        "n_signals": 20
+      },
+      "random": {
+        "acc": 0.575,
+        "ci95": [
+          0.4,
+          0.75
+        ],
+        "n_units": 20,
+        "n_signals": 20
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.4,
+        "ci95": [
+          0.15,
+          0.6256
+        ],
+        "ci90": [
+          0.2,
+          0.6
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 20,
+        "n_signals": 20
+      },
+      "wilcoxon_p": 0.006578413612826374,
+      "mcnemar_secondary": {
+        "n01_rand_only": 8,
+        "n10_swap_only": 1,
+        "p": 0.039062
+      },
+      "order_flip_rate": {
+        "swap": 0.15,
+        "random": 0.25
+      }
+    },
+    "generic": {
+      "label": "generic",
+      "n_items": 107,
+      "swap": {
+        "acc": 0.5514,
+        "ci95": [
+          0.4673,
+          0.6355
+        ],
+        "n_units": 107,
+        "n_signals": 98
+      },
+      "random": {
+        "acc": 0.757,
+        "ci95": [
+          0.6887,
+          0.8224
+        ],
+        "n_units": 107,
+        "n_signals": 98
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.2056,
+        "ci95": [
+          0.1168,
+          0.2944
+        ],
+        "ci90": [
+          0.1333,
+          0.2783
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 107,
+        "n_signals": 98
+      },
+      "wilcoxon_p": 2.8869949984681568e-05,
+      "mcnemar_secondary": {
+        "n01_rand_only": 38,
+        "n10_swap_only": 12,
+        "p": 0.000306
+      },
+      "order_flip_rate": {
+        "swap": 0.3178,
+        "random": 0.243
+      }
+    },
+    "all_990": {
+      "label": "all_990",
+      "n_items": 990,
+      "swap": {
+        "acc": 0.6576,
+        "ci95": [
+          0.6223,
+          0.694
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "random": {
+        "acc": 0.7545,
+        "ci95": [
+          0.7219,
+          0.7874
+        ],
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "gap_random_minus_swap": {
+        "mean_diff": 0.097,
+        "ci95": [
+          0.0589,
+          0.1334
+        ],
+        "ci90": [
+          0.0651,
+          0.1261
+        ],
+        "tost_pm005": "FAIL(not flat)",
+        "n_units": 990,
+        "n_signals": 240
+      },
+      "wilcoxon_p": 3.359032075685287e-10,
+      "mcnemar_secondary": {
+        "n01_rand_only": 287,
+        "n10_swap_only": 144,
+        "p": 0.0
+      },
+      "order_flip_rate": {
+        "swap": 0.3212,
+        "random": 0.2263
+      }
+    }
+  },
+  "expectations": {
+    "P-R1": "MISS",
+    "P-R2": "HIT",
+    "P-R3": "HIT",
+    "certified_minus_full_swap_acc": 0.0321
+  }
+}

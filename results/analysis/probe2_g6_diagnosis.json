@@ -1,0 +1,91 @@
+{
+  "stable_vs_morning": true,
+  "strict_now": {
+    "all": {
+      "recall@1": 0.03986332574031891,
+      "recall@5": 0.20956719817767655,
+      "recall@10": 0.31776765375854216,
+      "mrr": 0.13129305406967273,
+      "n_queries": 878,
+      "pool_size": 386
+    },
+    "truce": {
+      "recall@1": 0.02710027100271003,
+      "recall@5": 0.13956639566395665,
+      "recall@10": 0.22899728997289973,
+      "mrr": 0.0984880748213777,
+      "n_queries": 738,
+      "pool_size": 386
+    },
+    "sushi": {
+      "recall@1": 0.10714285714285714,
+      "recall@5": 0.5785714285714286,
+      "recall@10": 0.7857142857142857,
+      "mrr": 0.30422215896425653,
+      "n_queries": 140,
+      "pool_size": 386
+    }
+  },
+  "hairline_1e4": [
+    {
+      "caption_id": "truce_synth:pilot13/58.png#1",
+      "rank": 2,
+      "margin_above": 5.960464477539063e-08,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/58.png#2",
+      "rank": 1,
+      "margin_above": Infinity,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/87.png#1",
+      "rank": 2,
+      "margin_above": 0.0,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/360.png#0",
+      "rank": 2,
+      "margin_above": 0.0,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/360.png#1",
+      "rank": 2,
+      "margin_above": 2.9802322387695312e-08,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/360.png#2",
+      "rank": 2,
+      "margin_above": 0.0,
+      "margin_below": 0.0
+    },
+    {
+      "caption_id": "truce_synth:pilot13/362.png#0",
+      "rank": 2,
+      "margin_above": 0.0,
+      "margin_below": 2.9802322387695312e-08
+    },
+    {
+      "caption_id": "truce_synth:pilot13/362.png#1",
+      "rank": 1,
+      "margin_above": Infinity,
+      "margin_below": 5.960464477539063e-08
+    },
+    {
+      "caption_id": "truce_synth:pilot13/362.png#2",
+      "rank": 2,
+      "margin_above": 0.03963440656661987,
+      "margin_below": 5.960464477539063e-08
+    }
+  ],
+  "env": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cpu",
+    "numpy": "2.4.6",
+    "transformers": "5.14.1"
+  }
+}
